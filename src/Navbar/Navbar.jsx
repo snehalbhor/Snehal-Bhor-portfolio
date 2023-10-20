@@ -20,7 +20,7 @@ const Navbar = () => {
             <a
               className="nav-link active div"
               aria-current="page"
-              href="/why i change the carrer"
+              href="/why i change the career"
             >
               <div className="change-text">Why I change the career</div>
             </a>

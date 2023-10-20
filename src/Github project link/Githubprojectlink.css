@@ -1,0 +1,118 @@
+.sec-1{
+    color: blue;
+    font-weight: 500;
+    font-size: x-large;
+    background-color: gray;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    padding: 1%;
+    border: 0px;
+    border-radius: 5px;
+    outline: 2px solid black;
+}
+.maindiv-1{
+    background-color: rgb(128, 128, 168);
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding:1%;
+    outline: 2px solid rgb(223, 214, 214);
+    border-radius: 8px;
+    margin-bottom: 2%;
+    
+}
+.subdiv-1{
+    background-color: rgb(167, 167, 212);
+    outline: 2px solid rgb(223, 214, 214);
+    text-align: start;
+    padding: 1%;
+    padding-left: 2%;
+    padding-left: 30px;
+   
+}
+.subdiv-2{
+    background-color: rgb(177, 177, 185);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1%;
+    outline: 2px solid rgb(223, 214, 214);
+   
+}
+.dec-2{
+    background-color: rgb(230, 228, 231);
+    outline: 2px solid rgb(223, 214, 214);
+    /* padding: 10px 700px; */
+    border-radius: 5px;
+    /* align-items: normal; */
+    flex: 90%;
+    text-align: start;
+    padding: 1%;
+}
+.btnn-1{
+    outline: 2px solid rgb(223, 214, 214);
+    background-color: #007BFF;
+    color: white;
+    flex: 6%;
+    /* padding: 10px 20px; */
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    cursor: pointer;
+    margin-left: 2%;
+    /* margin-top: 10px; */
+}
+/* .btnn-1:hover {
+    background-color: #090e13;
+  } */
+
+  
+  /* .sec-1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .maindiv-1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .subdiv-1 {
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .subdiv-2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  
+  .dec-2 {
+    font-size: 16px;
+  }
+  
+  .btnn-1 {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btnn-1:hover {
+    background-color: #0056b3;
+  } */
+  
