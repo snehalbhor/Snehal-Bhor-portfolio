@@ -1,0 +1,59 @@
+.tsec-1{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: x-large;
+    background-color: rgb(236, 127, 194);
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    padding: 1%;
+    border: 0px;
+    border-radius: 5px;
+    outline: 2px solid rgb(228, 158, 158);
+}
+
+.tmaindiv-1{
+    background-color: rgb(207, 201, 201);
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding:1%;
+    outline: 2px solid rgb(248, 152, 152);
+    border-radius: 8px;
+    margin-bottom: 2%;
+    
+}
+
+.tsubdiv-1{
+    background-color: #1877f2;
+    color: white;
+    outline: 2px solid rgb(215, 217, 241);
+    text-align: start;
+    padding: 1%;
+    padding-left: 2%;
+    padding-left: 30px;
+   
+}
+
+.tsubdiv-2{
+    background-color: rgb(220, 212, 236);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1%;
+    outline: 2px solid rgb(243, 176, 176);
+   
+}
+
+.tdec-2{
+    background-color: rgb(231, 228, 229);
+    outline: 2px solid rgb(223, 214, 214);
+    /* padding: 10px 700px; */
+    border-radius: 5px;
+    /* align-items: normal; */
+    flex: 90%;
+    text-align: start;
+    padding: 1%;
+}
