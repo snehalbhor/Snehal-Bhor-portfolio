@@ -58,8 +58,6 @@
   margin-right: 2%;
 }
 
-
-
 /* part----2 */
 
 .part2 {
@@ -88,7 +86,6 @@
 .design {
   color: rgb(236, 0, 177);
 }
-
 
 /* part---3 */
 
@@ -205,15 +202,30 @@
   margin: 0.5%;
   font-size: 16px;
   color: #333;
-  /* justify-content: flex-start; */
   align-items: start;
 }
 
-.dot{
-margin-top: 10px;
-display: flex;
-margin: 0.5%;
-gap: 0.5%;
-line-height: 35px;
+.dot {
+  margin-top: 20px;
+  display: flex;
+  gap: 1%;
 }
+
+.dot1 {
+  display: flex;
+  margin-top: 40px;
+  gap: 1%;
+}
+
+
+/* part-----4     Experience */
+
+.part4{
+  display: flex;
+  background-color: red;
+  width: 100%;
+
+}
+
+
 

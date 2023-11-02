@@ -102,7 +102,9 @@ const Resume = () => {
           <div className="title-1">
             <h3 className="h3-design">Technical Skill Set</h3>
           </div>
-          <div className="part3main">
+        </div>
+
+        <div className="part3main">
             <div className="mainA">
               <div className="mainA-child-1">
                 {" "}
@@ -137,7 +139,7 @@ const Resume = () => {
             </div>
           </div>
 
-          <div className="part3main">
+        <div className="part3main">
             <div className="mainA">
               <div className="mainA-child-1">
                 {" "}
@@ -169,7 +171,6 @@ const Resume = () => {
               </div>
             </div>
           </div>
-        </div>
 
         <div className="part3main">
           <div className="mainA">
@@ -234,12 +235,12 @@ const Resume = () => {
             <div className="mainA-child-2">MongoDB</div>
           </div>
           <div className="mainB">
-            <div className="dot">
+            <div className="dot1">
               <GoDotFill size={25} />I am proficient in creating and managing
               MongoDB databases, collections, and documents, ensuring efficient
               data storage and retrieval
             </div>
-            <div className="dot">
+            <div className="dot1">
               <GoDotFill size={25} />I have completed a project on GitHub that
               utilizes MongoDB as the database backend, showcasing my practical
               application of MongoDB in real-world scenarios.{" "}
@@ -256,11 +257,15 @@ const Resume = () => {
             <div className="mainA-child-2">EXPRESS.JS</div>
           </div>
           <div className="mainB">
-            <div className="dot">
-              <GoDotFill size={25} />
+            <div className="dot1">
+              <GoDotFill size={25} />I can create simple routes in Express.js to
+              handle HTTP requests, providing a foundation for building web
+              applications.
             </div>
-            <div className="dot">
-              <GoDotFill size={25} />
+            <div className="dot1">
+              <GoDotFill size={25} />I am familiar with using middleware
+              functions in Express.js to execute tasks during the
+              request/response cycle.
             </div>
           </div>
         </div>
@@ -274,11 +279,15 @@ const Resume = () => {
             <div className="mainA-child-2">ARTIFICIAL INTELEGENCE (Basics)</div>
           </div>
           <div className="mainB">
-            <div className="dot">
-              <GoDotFill size={25} />
+            <div className="dot1">
+              <GoDotFill size={25} />I have a foundational understanding of
+              artificial intelligence (AI) and its core principles, encompassing
+              the simulation of human-like intelligence in machines.
             </div>
-            <div className="dot">
-              <GoDotFill size={25} />
+            <div className="dot1">
+              <GoDotFill size={25} />I am familiar with the fundamentals of
+              machine learning, which is a subset of AI, including supervised
+              learning, unsupervised learning, and reinforcement learning.
             </div>
           </div>
         </div>
@@ -348,13 +357,13 @@ const Resume = () => {
             <div className="mainA-child-2">DOCKER</div>
           </div>
           <div className="mainB">
-            <div className="dot">
+            <div className="dot1">
               <GoDotFill size={25} />I am proficient in Docker, a
               containerization platform, and use it to package and deploy
               applications, ensuring consistency and portability across
               different environments.
             </div>
-            <div className="dot">
+            <div className="dot1">
               <GoDotFill size={25} />I have utilized Docker in projects hosted
               on GitHub, demonstrating my practical knowledge of
               containerization and its benefits in application development and
@@ -372,13 +381,13 @@ const Resume = () => {
             <div className="mainA-child-2">KUBERNETES</div>
           </div>
           <div className="mainB">
-            <div className="dot">
+            <div className="dot1">
               <GoDotFill size={25} />I am proficient in Kubernetes, an
               open-source container orchestration platform, and use it to
               automate the deployment, scaling, and management of containerized
               applications.
             </div>
-            <div className="dot">
+            <div className="dot1">
               <GoDotFill size={25} />I have employed Kubernetes in projects
               hosted on GitHub, showcasing my practical experience with
               container orchestration and the management of complex application
@@ -425,17 +434,14 @@ const Resume = () => {
             <div className="mainA-child-2">JIRA</div>
           </div>
           <div className="mainB">
-            <div className="dot">
+            <div className="dot1">
               <GoDotFill size={25} />I am proficient in Jira, a widely used
               project management and issue tracking tool, and use it to
               facilitate project planning, tracking, and collaboration.
             </div>
-            <div className="dot">
+            <div className="dot1">
               <GoDotFill size={25} />I use Jira's reporting and dashboard
               features to track project progress,{" "}
-            </div>
-            <div className="dot">
-              <GoDotFill size={25} />
             </div>
           </div>
         </div>
@@ -449,11 +455,15 @@ const Resume = () => {
             <div className="mainA-child-2">FAST API</div>
           </div>
           <div className="mainB">
-            <div className="dot">
-              <GoDotFill size={25} />
+            <div className="dot1">
+              <GoDotFill size={25} />I have started exploring FastAPI, a Python
+              web framework for building APIs, and I'm in the early stages of
+              learning its fundamental concepts and features.
             </div>
-            <div className="dot">
-              <GoDotFill size={25} />
+            <div className="dot1">
+              <GoDotFill size={25} />I have created simple APIs using FastAPI to
+              understand how routing, request handling, and response generation
+              work.
             </div>
           </div>
         </div>
@@ -467,15 +477,27 @@ const Resume = () => {
             <div className="mainA-child-2">FLASK</div>
           </div>
           <div className="mainB">
-            <div className="dot">
-              <GoDotFill size={25} />
+            <div className="dot1">
+              <GoDotFill size={25} />I have begun my journey with Flask, a micro
+              web framework for Python, and I am in the early stages of
+              familiarizing myself with its core concepts.
             </div>
-            <div className="dot">
-              <GoDotFill size={25} />
+            <div className="dot1">
+              <GoDotFill size={25} />I am familiar with setting up basic routes
+              and handling HTTP requests and responses in Flask applications.
             </div>
           </div>
         </div>
       </div>
+
+      {/* part---4    experience */}
+
+      <div className="part4">
+        <div className="title-4">
+          <h3 className="h3-design4">Experience</h3>
+        </div>
+      </div>
+
 
       <div ref={page2Ref}>
         <div className="akshay2"></div>
