@@ -2,7 +2,7 @@ import "./Resume.css";
 import React, { useRef } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
-import photo from "./sneha.JPG";
+import photo from "./sneha.JPG"; // Make sure this image file exists
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { GrMail } from "react-icons/gr";
 import { FaLocationDot } from "react-icons/fa6";
@@ -22,12 +22,10 @@ const Resume = () => {
       pdf.addImage(imgData, "PNG", 10, 10, 190, 0); // Assuming the width of A4 page
       pdf.addPage();
 
-      // Generate the PDF for page 2
-      html2canvas(page2Ref.current).then((canvas) => {
-        const imgData = canvas.toDataURL("image/png");
-        pdf.addImage(imgData, "PNG", 10, 10, 190, 0); // Assuming the width of A4 page
-
-        // Save the PDF with both pages
+      // You can add content for page 2 here
+      html2canvas(page2Ref.current).then((canvas2) => {
+        const imgData2 = canvas2.toDataURL("image/png");
+        pdf.addImage(imgData2, "PNG", 10, 10, 190, 0); // Assuming the width of A4 page
         pdf.save("resume.pdf");
       });
     });
@@ -35,8 +33,9 @@ const Resume = () => {
 
   return (
     <div className="snehal">
-      <h2 className="title">Snehal Bhor CV</h2>
       <div ref={page1Ref}>
+        <h2 className="title">Snehal Bhor CV</h2>
+
         <div className="akshay">
           <div className="page1main">
             <div className="part1">
@@ -61,6 +60,7 @@ const Resume = () => {
                 </div>
               </div>
             </div>
+
             <div className="part2">
               <div className="part2child">
                 <div className="icon-container">
@@ -98,13 +98,15 @@ const Resume = () => {
             </div>
           </div>
         </div>
+
+        {/* part----3      Resume */}
+
         <div className="part3">
           <div className="title-1">
             <h3 className="h3-design">Technical Skill Set</h3>
           </div>
-        </div>
 
-        <div className="part3main">
+          <div className="part3main">
             <div className="mainA">
               <div className="mainA-child-1">
                 {" "}
@@ -139,7 +141,7 @@ const Resume = () => {
             </div>
           </div>
 
-        <div className="part3main">
+          <div className="part3main">
             <div className="mainA">
               <div className="mainA-child-1">
                 {" "}
@@ -172,230 +174,237 @@ const Resume = () => {
             </div>
           </div>
 
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./html.avif" alt="" className="src2" />
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./html.avif" alt="" className="src2" />
+              </div>
+              <div className="mainA-child-2">HTML</div>
             </div>
-            <div className="mainA-child-2">HTML</div>
+            <div className="mainB">
+              <div className="dot">
+                <GoDotFill size={25} />I have a strong foundation in HTML, which
+                is the backbone of web development,{" "}
+              </div>
+              <div className="dot">
+                <GoDotFill size={25} />I prioritize the use of semantic HTML
+                elements to enhance accessibility and search engine
+                optimization, ensuring that web content is easily understandable
+                and navigable
+              </div>
+              <div className="dot">
+                <GoDotFill size={25} />I have experience in creating HTML forms
+                and implementing client-side input validation to enhance user
+                interactivity and data integrity
+              </div>
+            </div>
           </div>
-          <div className="mainB">
-            <div className="dot">
-              <GoDotFill size={25} />I have a strong foundation in HTML, which
-              is the backbone of web development,{" "}
+
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./download (1).png" alt="" className="src04" />
+              </div>
+              <div className="mainA-child-2">CSS</div>
             </div>
-            <div className="dot">
-              <GoDotFill size={25} />I prioritize the use of semantic HTML
-              elements to enhance accessibility and search engine optimization,
-              ensuring that web content is easily understandable and navigable
+            <div className="mainB">
+              <div className="dot">
+                <GoDotFill size={25} />I have a solid understanding of CSS
+                (Cascading Style Sheets) and its pivotal role in web design,
+                enabling me to enhance the visual appeal and layout of web
+                content.
+              </div>
+              <div className="dot">
+                <GoDotFill size={25} />I excel in applying CSS to style and
+                format web elements, achieving aesthetically pleasing designs
+                and layouts that resonate with the desired user experience.
+              </div>
+              <div className="dot">
+                <GoDotFill size={25} />I have applied my CSS skills in various
+                projects hosted on my GitHub repository, where I've crafted
+                visually appealing and well-designed user interfaces.{" "}
+              </div>
             </div>
-            <div className="dot">
-              <GoDotFill size={25} />I have experience in creating HTML forms
-              and implementing client-side input validation to enhance user
-              interactivity and data integrity
+          </div>
+
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./MongoDB.jpg" alt="" className="src3" />
+              </div>
+              <div className="mainA-child-2">MongoDB</div>
+            </div>
+            <div className="mainB">
+              <div className="dot1">
+                <GoDotFill size={25} />I am proficient in creating and managing
+                MongoDB databases, collections, and documents, ensuring
+                efficient data storage and retrieval
+              </div>
+              <div className="dot1">
+                <GoDotFill size={25} />I have completed a project on GitHub that
+                utilizes MongoDB as the database backend, showcasing my
+                practical application of MongoDB in real-world scenarios.{" "}
+              </div>
+            </div>
+          </div>
+
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./expresslogo.png" alt="" className="src4" />
+              </div>
+              <div className="mainA-child-2">EXPRESS.JS</div>
+            </div>
+            <div className="mainB">
+              <div className="dot1">
+                <GoDotFill size={25} />I can create simple routes in Express.js
+                to handle HTTP requests, providing a foundation for building web
+                applications.
+              </div>
+              <div className="dot1">
+                <GoDotFill size={25} />I am familiar with using middleware
+                functions in Express.js to execute tasks during the
+                request/response cycle.
+              </div>
+            </div>
+          </div>
+
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./ai.jpg" alt="" className="src5" />
+              </div>
+              <div className="mainA-child-2">
+                ARTIFICIAL INTELEGENCE (Basics)
+              </div>
+            </div>
+            <div className="mainB">
+              <div className="dot1">
+                <GoDotFill size={25} />I have a foundational understanding of
+                artificial intelligence (AI) and its core principles,
+                encompassing the simulation of human-like intelligence in
+                machines.
+              </div>
+              <div className="dot1">
+                <GoDotFill size={25} />I am familiar with the fundamentals of
+                machine learning, which is a subset of AI, including supervised
+                learning, unsupervised learning, and reinforcement learning.
+              </div>
+            </div>
+          </div>
+
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./Git.png" alt="" className="src6" />
+              </div>
+              <div className="mainA-child-2">GIT</div>
+            </div>
+            <div className="mainB">
+              <div className="dot">
+                <GoDotFill size={25} />I am proficient in using Git, a widely
+                adopted version control system, to track changes in code and
+                collaborate effectively with development teams.
+              </div>
+              <div className="dot">
+                <GoDotFill size={25} />I have a strong understanding of version
+                control concepts, enabling me to manage code changes, track
+                history, and collaborate on projects efficiently.
+              </div>
+              <div className="dot">
+                <GoDotFill size={25} />I have a habit of making regular code
+                commits to Git repositories, ensuring that project progress.
+              </div>
+            </div>
+          </div>
+
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./GitHub.png" alt="" className="src6" />
+              </div>
+              <div className="mainA-child-2">GIThub</div>
+            </div>
+            <div className="mainB">
+              <div className="dot">
+                <GoDotFill size={25} />I am familiar with using GitHub as a
+                collaborative platform for hosting Git repositories, enabling me
+                to contribute to open-source projects and collaborate with other
+                developers.
+              </div>
+              <div className="dot">
+                <GoDotFill size={25} />I can work effectively with team members
+                using Git, resolving conflicts, reviewing pull requests, and
+                ensuring smooth collaboration in a distributed development
+                environment.
+              </div>
+              <div className="dot">
+                <GoDotFill size={25} />
+                My regular code commits and use of Git have saved projects from
+                potential code disasters, as it provides a reliable and
+                organized history of changes and helps in code recovery.
+              </div>
+            </div>
+          </div>
+
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./docker.png" alt="" className="src8" />
+              </div>
+              <div className="mainA-child-2">DOCKER</div>
+            </div>
+            <div className="mainB">
+              <div className="dot1">
+                <GoDotFill size={25} />I am proficient in Docker, a
+                containerization platform, and use it to package and deploy
+                applications, ensuring consistency and portability across
+                different environments.
+              </div>
+              <div className="dot1">
+                <GoDotFill size={25} />I have utilized Docker in projects hosted
+                on GitHub, demonstrating my practical knowledge of
+                containerization and its benefits in application development and
+                deployment.
+              </div>
+            </div>
+          </div>
+
+          <div className="part3main">
+            <div className="mainA">
+              <div className="mainA-child-1">
+                {" "}
+                <img src="./kubernetes.jpg" alt="" className="src8" />
+              </div>
+              <div className="mainA-child-2">KUBERNETES</div>
+            </div>
+            <div className="mainB">
+              <div className="dot1">
+                <GoDotFill size={25} />I am proficient in Kubernetes, an
+                open-source container orchestration platform, and use it to
+                automate the deployment, scaling, and management of
+                containerized applications.
+              </div>
+              <div className="dot1">
+                <GoDotFill size={25} />I have employed Kubernetes in projects
+                hosted on GitHub, showcasing my practical experience with
+                container orchestration and the management of complex
+                application environments.
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./download (1).png" alt="" className="src04" />
-            </div>
-            <div className="mainA-child-2">CSS</div>
-          </div>
-          <div className="mainB">
-            <div className="dot">
-              <GoDotFill size={25} />I have a solid understanding of CSS
-              (Cascading Style Sheets) and its pivotal role in web design,
-              enabling me to enhance the visual appeal and layout of web
-              content.
-            </div>
-            <div className="dot">
-              <GoDotFill size={25} />I excel in applying CSS to style and format
-              web elements, achieving aesthetically pleasing designs and layouts
-              that resonate with the desired user experience.
-            </div>
-            <div className="dot">
-              <GoDotFill size={25} />I have applied my CSS skills in various
-              projects hosted on my GitHub repository, where I've crafted
-              visually appealing and well-designed user interfaces.{" "}
-            </div>
-          </div>
-        </div>
-
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./MongoDB.jpg" alt="" className="src3" />
-            </div>
-            <div className="mainA-child-2">MongoDB</div>
-          </div>
-          <div className="mainB">
-            <div className="dot1">
-              <GoDotFill size={25} />I am proficient in creating and managing
-              MongoDB databases, collections, and documents, ensuring efficient
-              data storage and retrieval
-            </div>
-            <div className="dot1">
-              <GoDotFill size={25} />I have completed a project on GitHub that
-              utilizes MongoDB as the database backend, showcasing my practical
-              application of MongoDB in real-world scenarios.{" "}
-            </div>
-          </div>
-        </div>
-
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./expresslogo.png" alt="" className="src4" />
-            </div>
-            <div className="mainA-child-2">EXPRESS.JS</div>
-          </div>
-          <div className="mainB">
-            <div className="dot1">
-              <GoDotFill size={25} />I can create simple routes in Express.js to
-              handle HTTP requests, providing a foundation for building web
-              applications.
-            </div>
-            <div className="dot1">
-              <GoDotFill size={25} />I am familiar with using middleware
-              functions in Express.js to execute tasks during the
-              request/response cycle.
-            </div>
-          </div>
-        </div>
-
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./ai.jpg" alt="" className="src5" />
-            </div>
-            <div className="mainA-child-2">ARTIFICIAL INTELEGENCE (Basics)</div>
-          </div>
-          <div className="mainB">
-            <div className="dot1">
-              <GoDotFill size={25} />I have a foundational understanding of
-              artificial intelligence (AI) and its core principles, encompassing
-              the simulation of human-like intelligence in machines.
-            </div>
-            <div className="dot1">
-              <GoDotFill size={25} />I am familiar with the fundamentals of
-              machine learning, which is a subset of AI, including supervised
-              learning, unsupervised learning, and reinforcement learning.
-            </div>
-          </div>
-        </div>
-
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./Git.png" alt="" className="src6" />
-            </div>
-            <div className="mainA-child-2">GIT</div>
-          </div>
-          <div className="mainB">
-            <div className="dot">
-              <GoDotFill size={25} />I am proficient in using Git, a widely
-              adopted version control system, to track changes in code and
-              collaborate effectively with development teams.
-            </div>
-            <div className="dot">
-              <GoDotFill size={25} />I have a strong understanding of version
-              control concepts, enabling me to manage code changes, track
-              history, and collaborate on projects efficiently.
-            </div>
-            <div className="dot">
-              <GoDotFill size={25} />I have a habit of making regular code
-              commits to Git repositories, ensuring that project progress.
-            </div>
-          </div>
-        </div>
-
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./GitHub.png" alt="" className="src6" />
-            </div>
-            <div className="mainA-child-2">GIThub</div>
-          </div>
-          <div className="mainB">
-            <div className="dot">
-              <GoDotFill size={25} />I am familiar with using GitHub as a
-              collaborative platform for hosting Git repositories, enabling me
-              to contribute to open-source projects and collaborate with other
-              developers.
-            </div>
-            <div className="dot">
-              <GoDotFill size={25} />I can work effectively with team members
-              using Git, resolving conflicts, reviewing pull requests, and
-              ensuring smooth collaboration in a distributed development
-              environment.
-            </div>
-            <div className="dot">
-              <GoDotFill size={25} />
-              My regular code commits and use of Git have saved projects from
-              potential code disasters, as it provides a reliable and organized
-              history of changes and helps in code recovery.
-            </div>
-          </div>
-        </div>
-
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./docker.png" alt="" className="src8" />
-            </div>
-            <div className="mainA-child-2">DOCKER</div>
-          </div>
-          <div className="mainB">
-            <div className="dot1">
-              <GoDotFill size={25} />I am proficient in Docker, a
-              containerization platform, and use it to package and deploy
-              applications, ensuring consistency and portability across
-              different environments.
-            </div>
-            <div className="dot1">
-              <GoDotFill size={25} />I have utilized Docker in projects hosted
-              on GitHub, demonstrating my practical knowledge of
-              containerization and its benefits in application development and
-              deployment.
-            </div>
-          </div>
-        </div>
-
-        <div className="part3main">
-          <div className="mainA">
-            <div className="mainA-child-1">
-              {" "}
-              <img src="./kubernetes.jpg" alt="" className="src8" />
-            </div>
-            <div className="mainA-child-2">KUBERNETES</div>
-          </div>
-          <div className="mainB">
-            <div className="dot1">
-              <GoDotFill size={25} />I am proficient in Kubernetes, an
-              open-source container orchestration platform, and use it to
-              automate the deployment, scaling, and management of containerized
-              applications.
-            </div>
-            <div className="dot1">
-              <GoDotFill size={25} />I have employed Kubernetes in projects
-              hosted on GitHub, showcasing my practical experience with
-              container orchestration and the management of complex application
-              environments.
-            </div>
-          </div>
-        </div>
-
+      <div className="part4" ref={page2Ref}>
         <div className="part3main">
           <div className="mainA">
             <div className="mainA-child-1">
@@ -488,21 +497,26 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* part---4    experience */}
+        {/* part4-------- experience */}
 
-      <div className="part4">
-        <div className="title-4">
-          <h3 className="h3-design4">Experience</h3>
+        <div className="part3">
+          <div className="title-1">
+            <h3 className="h3-design">Experience</h3>
+          </div>
+          <div className="div1st">
+            <div className="1stone">
+              <div className="onechild1">hiiii</div>
+              <div className="onechild2">hello</div>
+            </div>
+            <div className="1sttwo">
+              <div className="twochild1">hiii</div>
+              <div className="twochild2">hello</div>
+            </div>
+          </div>
         </div>
       </div>
 
-
-      <div ref={page2Ref}>
-        <div className="akshay2"></div>
-        {/* Add the content for page 2 here */}
-      </div>
       <div>
         <button onClick={handleDownloadClick}>Download as PDF</button>
       </div>

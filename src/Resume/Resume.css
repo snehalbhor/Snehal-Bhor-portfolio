@@ -94,7 +94,8 @@
   margin-bottom: 1%;
   color: rgb(0, 0, 0);
   font-style: normal;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; margin-top: 1%;
+ 
 }
 .h3-design {
   display: flex;
@@ -221,11 +222,15 @@
 /* part-----4     Experience */
 
 .part4{
-  display: flex;
-  background-color: red;
   width: 100%;
-
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: rgb(0, 0, 0);
+  font-style: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+
 
 
 
