@@ -505,16 +505,244 @@ const Resume = () => {
             <h3 className="h3-design">Experience</h3>
           </div>
           <div className="div1st">
-            <div className="1stone">
-              <div className="onechild1">hiiii</div>
-              <div className="onechild2">hello</div>
+            <div className="stone1">
+              <div className="onechild1">
+                <strong>Research Techician : </strong> As I have life science
+                background I was working in research field in Linq Therapeutics
+                Pvt Ltd.(Jehangir Clinical Development Centre, Pune)
+              </div>
+              <br />
+              <div className="onechild2">
+                <strong>Duration : </strong> September 2021 To July 2022
+              </div>
             </div>
-            <div className="1sttwo">
-              <div className="twochild1">hiii</div>
-              <div className="twochild2">hello</div>
+
+            <div className="stone1">
+              <div className="onechild1">
+                <strong>Research Techician : </strong> As I have life science
+                background I was working in research field in Linq Therapeutics
+                Pvt Ltd.(Jehangir Clinical Development Centre, Pune)
+              </div>
+              <br />
+              <div className="onechild2">
+                <strong>Duration : </strong> September 2021 To July 2022
+              </div>
             </div>
           </div>
         </div>
+
+        {/* part 5---------education */}
+        <div className="part5">
+          <div className="title-1">
+            <h3 className="h3-design">Education</h3>
+          </div>
+          <div className="div1st">
+            <div className="p5A">
+              <div className="childA">
+                10th
+              </div>
+              <div className="childB">
+                <strong>Year:</strong>2012
+              </div>
+              <div className="childC">
+                <strong>School:</strong>Santuknath English Vidyalaya Jeur (Ba.),
+                Ahmednagar
+              </div>
+              <div className="childD">
+                <strong>Marks:</strong>68.73%
+              </div>
+            </div>
+
+            <div className="p5A">
+              <div className="childA">
+               12th
+              </div>
+              <div className="childB">
+                <strong>Year:</strong>2014
+              </div>
+              <div className="childC">
+                <strong>College:</strong>Radhabai Kale Mahila Mahavidyalaya,
+                Ahmednagar
+              </div>
+              <div className="childD">
+                <strong>Marks:</strong>49.38%
+              </div>
+            </div>
+
+            <div className="p5A">
+              <div className="childA">
+               Bachelor of Science (Microbiology)
+              </div>
+              <div className="childB">
+                <strong>Year:</strong>2018
+              </div>
+              <div className="childC">
+                <strong>College:</strong>B.P.H Education Society's Ahmednagar
+                College, Ahmednagar
+              </div>
+              <div className="childD">
+                <strong>Marks:</strong>59.78%
+              </div>
+            </div>
+
+            <div className="p5A">
+              <div className="childA">
+                Masters of Science (Microbiology)
+              </div>
+              <div className="childB">
+                <strong>Year:</strong>2020
+              </div>
+              <div className="childC">
+                <strong>College:</strong>Sinhgad College of Science, Pune
+              </div>
+              <div className="childD">
+                <strong>Marks:</strong>59.85%
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Part  6--------Projects */}
+
+        <div className="title-1">
+          <h3 className="h3-design">Projects</h3>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 01: </strong>I have developed a project entitled
+            "Financial Management UI" using a combination of React for the
+            frontend, CSS for styling, and HTML for structuring the user
+            interface.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p01-core-css-react-financial-management-ui"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 02: </strong>I have successfully addressed a series
+            of questions exclusively utilizing React.js.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p02-react-exercise"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 03: </strong>In this project I took some questions
+            from python related to function, for loop, list, tuple etc. for
+            practice purpose.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p05-python-exercise"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 04: </strong>In this project I used React JS,
+            javascript, html, css. Through this project I gained valuable
+            experience in building website and user interface design
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p04-css-project"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 05: </strong>
+            In the development of this project, I used many of technologies,
+            including React JS, JavaScript, HTML, CSS, Python, as well as
+            containerization through Docker and orchestration with Kubernetes.
+            For automation and continuous integration, Jenkins was used in our
+            deployment pipeline.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p09-deployment-docker-kubernets-jenkins-react-python-deep-learning"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 06: </strong>This included React JS, HTML, and
+            Python for building the application, and I used Docker to package it
+            and Kubernetes to manage it.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 07: </strong>This included React JS and HTML for the
+            user interface, and Python with Flask for the back-end.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 08: </strong> This portfolio project showcases a
+            comprehensive integration of various technologies that I've acquired
+            expertise in. It encompasses React for the dynamic front-end, HTML
+            and CSS for web structure and design, and Python for versatile
+            back-end capabilities. The project's aim was to demonstrate a wide
+            range of acquired skills and knowledge in a single, cohesive
+            showcase.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p03-Snehal-Bhor-portfolio"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        {/* part   7---------next 5 years goal */}
+        <div className="title-1">
+          <h3 className="h3-design">Next Five Year Goals</h3>
+        </div>
+
+        <div className="subdivn-2">
+          <div className="decn-2">
+          <GoDotFill size={25} /><strong >Continuous Learning:</strong>Over the next five years, I aspire to engage in ongoing learning and development to enhance my skill set and knowledge.<br/>
+          <GoDotFill size={25} /><strong>Technical Officer Role:</strong>My goal is to secure a position as a technical officer in a reputable organization, contributing my expertise to its success.<br/>
+          <GoDotFill size={25} /><strong>Self-Improvement: </strong>I am committed to self-improvement in all aspects of life, striving for personal growth and a steady career progression.<br/>
+          <GoDotFill size={25} /><strong>Spousal Support: </strong>My spouse is a significant source of inspiration and support, motivating me to explore new horizons and providing encouragement in my career pursuits.<br/>
+          <GoDotFill size={25} /><strong>Family Planning: </strong>For the next five years, my spouse and I have chosen not to have children, allowing us to focus on our personal and professional growth.
+          </div>
+         
+        </div>
+
+
       </div>
 
       <div>

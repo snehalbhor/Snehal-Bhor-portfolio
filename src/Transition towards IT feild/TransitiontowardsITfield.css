@@ -56,4 +56,8 @@
     flex: 90%;
     text-align: start;
     padding: 1%;
+    line-height: 2;
+}
+.tdec-2 strong{
+    margin-right: 10px;
 }

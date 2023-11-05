@@ -94,8 +94,8 @@
   margin-bottom: 1%;
   color: rgb(0, 0, 0);
   font-style: normal;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; margin-top: 1%;
- 
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 1%;
 }
 .h3-design {
   display: flex;
@@ -218,10 +218,9 @@
   gap: 1%;
 }
 
-
 /* part-----4     Experience */
 
-.part4{
+.part4 {
   width: 100%;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -230,7 +229,157 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.div1st {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  outline: 1px solid rgb(3, 3, 3);
+  border: 2px solid #ccc;
+  margin: 10px;
+  background-color: blanchedalmond;
+}
+
+.stone1 {
+  margin: 0.5%;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5%;
+}
+.onechild1 {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1%;
+  border-radius: 5px;
+}
+.onechild2 {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+/* part---5 education */
+.part5 {
+  width: 100%;
+}
+
+.p5A {
+ 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 0px;
+  outline: 2px solid rgb(0, 0, 0);
+  border-radius: 5px !important; /* This sets the border radius to 5 pixels */
+}
+
+.childA {
+  flex: 1%;
+  padding: 0.5%;
+  background-color: #fff;
+  outline: 1px solid rgb(3, 3, 3);
+}
+.childA strong {
+  margin-right: 10px; 
+}
+
+.childB {
+  flex: 1%;
+  background-color: #fff;
+  outline: 1px solid rgb(3, 3, 3);
+  padding: 0.5%;
+}
+.childB strong {
+  margin-right: 10px;
+}
+.childC {
+  flex: 20%;
+  background-color: #fff;
+  outline: 1px solid rgb(3, 3, 3);
+  padding: 0.5%;
+}
+.childC strong {
+  margin-right: 10px;
+}
+.childD {
+  flex: 1%;
+  background-color: #fff;
+  outline: 1px solid rgb(3, 3, 3);
+  padding: 0.5%;
+}
+.childD strong {
+  margin-right: 10px;
+}
+
+/* part 6---------projects */
+
+.subdivr-2 {
+  background-color: rgb(177, 177, 185);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5%;
+  outline: 1px solid rgb(223, 214, 214);
+}
+.decr-2 {
+  background-color: rgb(230, 228, 231);
+  outline: 1px solid rgb(223, 214, 214);
+
+  border-radius: 1px;
+
+  flex: 90%;
+  text-align: start;
+  padding: 0.4%;
+}
+.decr-2 strong{
+  margin-right: 10px;
+}
+.btnnr-1 {
+  outline: 2px solid rgb(223, 214, 214);
+  background-color: #007bff;
+  color: white;
+  flex: 6%;
+
+  border: none;
+  border-radius: 2px;
+  padding: 0.5%;
+  cursor: pointer;
+  margin-left: 2%;
+}
 
 
+/* part   7  -------Next Five Year Goals */
+.subdivn-2 {
+  background-color: rgb(177, 177, 185);
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  padding: 0.5%;
+  outline: 1px solid rgb(10, 1, 1);
 
+  
+  
+}
+.decn-2 {
+  width: 100%;
+  background-color: rgb(230, 228, 231);
+  outline: 1px solid rgb(10, 0, 0);
+  border-radius: 1px;
+  /* flex: 90%; */
+  text-align: start;
+  padding: 2%;
+  line-height: 1.5;
+}
 
+.decn-2 strong{
+  margin-right: 10px;
+  
+}

@@ -1,5 +1,8 @@
 import React from "react";
 import "./TransitiontowardsITfield.css";
+import { GoDotFill } from "react-icons/go";
+
+
 
 const TransitiontowardsITfield = () => {
   return (
@@ -55,13 +58,13 @@ const TransitiontowardsITfield = () => {
               design to contribute meaningfully to the field. I aspire to be
               known for my expertise and innovation in IT, and I'm determined to
               prove myself through hard work and dedication.
-              <br /> <strong>Personal Life:</strong>
+              <br /> <br/><strong>Personal Life:</strong>
               As a married woman who embarked on a career change in 2023, I
               understand the importance of balance. Over the next five years, I
               aim to maintain a fulfilling personal life.Achieving a harmonious
               work-life balance is essential, and I'll ensure that my personal
               life complements my career ambitions.
-              <br />
+              <br /><br/>
               Overall, my vision for the next five years is a successful and
               fulfilling career in the IT field while nurturing a happy and
               supportive personal life.
@@ -74,50 +77,51 @@ const TransitiontowardsITfield = () => {
         <div className="tmaindiv-1">
           <div className="submain">
             <div className="tsubdiv-1">
-              <strong>Technologies I learned</strong>
+              <strong>Technologies I learned.</strong>
             </div>
           </div>
 
           <div className="tsubdiv-2">
             <div className="tdec-2">
-              <strong>React.js:</strong>I've learned React.js, which is a
+            < GoDotFill size={20}/><strong>React.js:</strong>I've learned React.js, which is a
               popular JavaScript library for building user interfaces.
               <br />
-              <strong>Express.js</strong>I've worked with Express.js, a Node.js
+              < GoDotFill size={20}/><strong>Express.js:</strong>I've worked with Express.js, a Node.js
               web application framework, to simplify web application and API
-              development
+              development.
               <br />
-              <strong>HTML</strong>I have experience with HTML, the standard
+              < GoDotFill size={20}/><strong>HTML:</strong>I have experience with HTML, the standard
               language for creating web pages and web applications.<br/>
-              <strong>Python</strong>I'm proficient in Python, a versatile and
-              widely-used programming language with various applications
-              <br /> <strong>CSS (Cascading Style Sheets):</strong>I can style
-              and format web pages using CSS (Cascading Style Sheets) to make
-              them visually appealing
+              < GoDotFill size={20}/><strong>Python:</strong>I'm proficient in Python, a versatile and
+              widely-used programming language with various applications.
               <br />
-              <strong>MongoDB:</strong>I've used MongoDB for its flexibility and
+              < GoDotFill size={20}/> <strong>CSS (Cascading Style Sheets):</strong>I can style
+              and format web pages using CSS (Cascading Style Sheets) to make
+              them visually appealing.
+              <br />
+              < GoDotFill size={20}/><strong>MongoDB:</strong>I've used MongoDB for its flexibility and
               scalability in web development.
               <br />
-              <strong>artificial intelligence (basics)</strong>I have a basic
+              < GoDotFill size={20}/><strong>Artificial Intelligence (basics):</strong>I have a basic
               understanding of artificial intelligence concepts, including
               machine learning and neural networks.
-              <br /> <strong>Git & GitHub</strong>I use Git for version control
+              <br /> 
+              < GoDotFill size={20}/><strong>Git & GitHub:</strong>I use Git for version control
               and GitHub as a platform for collaborative software development
               and code management.
               <br />
-              <strong>Docker and Kubernetes:</strong>
-              <br />
+              < GoDotFill size={20}/><strong>Docker and Kubernetes:</strong>
               I'm familiar with Docker and Kubernetes, which I use for
               containerization and orchestration of applications for deployment
               and scaling.
               <br />
-              <strong>Jenkins:</strong>I've set up automation pipelines using
+              < GoDotFill size={20}/><strong>Jenkins:</strong>I've set up automation pipelines using
               Jenkins, an open-source automation server.
               <br />
-              <strong>Jira :</strong>For project management and issue tracking,
+              < GoDotFill size={20}/><strong>Jira :</strong>For project management and issue tracking,
               I've used Jira in various software development projects.
               <br />
-              <strong>FastAPI</strong>I've built web APIs and microservices
+              < GoDotFill size={20}/><strong>FastAPI:</strong>I've built web APIs and microservices
               using FastAPI and Flask, both Python web frameworks.
               <br />
               With these skills, I'm well-prepared for various software
@@ -131,7 +135,7 @@ const TransitiontowardsITfield = () => {
         <div className="tmaindiv-1">
           <div className="submain">
             <div className="tsubdiv-1">
-              <strong>About my project</strong>
+              <strong>About my project.</strong>
             </div>
           </div>
 
