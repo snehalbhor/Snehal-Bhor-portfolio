@@ -1,45 +1,19 @@
-import React, { useState} from "react";
+import React, { useContext } from "react";
 import "./Mainproject.css";
 import photo from "./pc.avif";
-// import fastapiContext from "../context/fastapi/fastapiContext";
+import fastapiContext from "../context/fastapi/fastapiContext";
 
 const Mainproject1 = () => {
-  // const { data, setData } = useContext(fastapiContext);
+  const { inputText, setInputText, result, fetchData } =
+    useContext(fastapiContext);
+    
 
-  const [inputText, setInputText] = useState("");
-  const [result, setResult] = useState("");
-
-  const handleInputChange = (event) => {
+  const handleInputClick = (event) => {
     setInputText(event.target.value);
   };
 
   const handlePredictClick = async () => {
-    try {
-      const response = await fetch(
-        `http://127.0.0.1:8000/process?in_string=${encodeURIComponent(
-          inputText
-        )}`,
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            // Add other headers if required
-          },
-          body: "", // Empty body for a POST request with query parameters
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-
-      const data = await response.json();
-      console.log(data);
-      setResult(data.uppercase);
-      
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
+    await fetchData();
   };
   return (
     <div>
@@ -63,7 +37,7 @@ const Mainproject1 = () => {
                 className="textinput"
                 placeholder="Enter your task here"
                 value={inputText}
-                onChange={handleInputChange}
+                onChange={handleInputClick}
               />
             </div>
             <div className="predictor" onClick={handlePredictClick}>

@@ -1,16 +1,44 @@
 import React, { useState } from "react";
 import fastapiContext from "./fastapiContext.js";
 
-const FastAPIState = ({ children }) => {
-  const [data, setData] = useState(null); // Example state/data
+const FastAPIStateContext = ({ children }) => {
+ 
+  const [inputText, setInputText] = useState("");
+  const [result, setResult] = useState("");
 
-  // Functions or logic to manipulate the shared data
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        `http://127.0.0.1:8000/process?in_string=${encodeURIComponent(
+          inputText
+        )}`,
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: " ",
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+
+      const data = await response.json();
+      setResult(data.uppercase);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
 
   return (
-    <fastapiContext.Provider value={{ data, setData }}>
+    <fastapiContext.Provider
+      value={{ inputText, setInputText, result, fetchData }}
+    >
       {children}
     </fastapiContext.Provider>
   );
 };
 
-export default FastAPIState;
+export default FastAPIStateContext;
