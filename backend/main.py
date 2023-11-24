@@ -41,7 +41,7 @@ def ai_process(input_string: str):
 # Create a POST route that uses the `ai_process` function
 @app.post("/process")
 async def process_string(in_string):
-    print("********",in_string)
+    # print("********",in_string)
     try:
         processed_string = ai_process(in_string)
         return {"uppercase": processed_string}
