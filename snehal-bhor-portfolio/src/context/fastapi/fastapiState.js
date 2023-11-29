@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import fastapiContext from "./fastapiContext.js";
 
+
 const FastAPIStateContext = ({ children }) => {
  
   const [inputText, setInputText] = useState("");

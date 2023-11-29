@@ -8,13 +8,18 @@ import Resume from "./Resume/Resume";
 import Githubprojectlink from "./Github project link/Githubprojectlink";
 import Mainproject1 from "./Main project -1/Mainproject1";
 import Mainproject2 from "./Main project-2/Mainproject2";
+import ResultPage from "./Main project-2/ResultPage";
 import TransitiontowardsITfield from "./Transition towards IT feild/TransitiontowardsITfield";
 import FastAPIState from "./context/fastapi/fastapiState.js";
+import FlaskState from "./context/Flask/FlaskState";
 
 function App() {
   return (
     <>
+    
       <FastAPIState>
+        <FlaskState>
+
         <Router>
           <Routes>
             <Route path="/" element={<Navbar />} />
@@ -29,8 +34,10 @@ function App() {
             <Route path="/main project 1" element={<Mainproject1 />} />
 
             <Route path="/main project 2" element={<Mainproject2 />} />
+            <Route path="/result" element={<ResultPage/>} />
           </Routes>
         </Router>
+        </FlaskState>
       </FastAPIState>
     </>
   );
