@@ -40,7 +40,7 @@ const Mainproject2 = () => {
 
   return (
     <section className="h-wrapper">
-     
+      <img src="./back.jpg" alt="" className="src" />
       <div className="h-container">
         {/* cont-1 */}
 

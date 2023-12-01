@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  frontend:
+    image: frontend # Replace with your frontend image name
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend1
+      - backend2
+
+  backend1:
+    image: fastapi-backend # Replace with your backend1 image name
+    ports:
+      - "5000:5000"
+
+  backend2:
+    image: flask-backend # Replace with your backend2 image name
+    ports:
+      - "8002:8002"

@@ -1,10 +1,13 @@
 
 .h-wrapper {
-  background-image: url('/home/akshay/Desktop/main-project/snehal-bhor-portfolio/src/back.jpg');
   background-size: cover;
   background-position: center;
 }
-
+.src{
+  width: 100%;
+    height: 1267px;
+    display: block;
+}
 .img-container {
 
     position: relative;
@@ -14,13 +17,6 @@
 .img_cont{
   width: 100%;
 }
-
-.img-container img {
-    width: 100%;
-    height: 1267px;
-    display: block;
-}
-
 
 .t-container{
   position: absolute;
