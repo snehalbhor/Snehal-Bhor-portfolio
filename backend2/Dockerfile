@@ -4,7 +4,10 @@ FROM python:3.8
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements.txt file and install the dependencies
+# Install system dependencies
+RUN apt-get update && apt-get install -y libgl1-mesa-glx
+
+# Copy the requirements.txt file and install the Python dependencies
 COPY requirements.txt .
 
 # Install any needed packages specified in requirements.txt
@@ -18,3 +21,4 @@ EXPOSE 8002
 
 # Command to run the Flask application
 CMD ["python3", "app.py"]
+

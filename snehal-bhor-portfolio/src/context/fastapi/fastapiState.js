@@ -10,7 +10,10 @@ const FastAPIStateContext = ({ children }) => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/process?in_string=${encodeURIComponent(
+        // `http://127.0.0.1:8000/process?in_string=${encodeURIComponent(    local host
+        // docker host
+        `http://0.0.0.0:5000/process?in_string=${encodeURIComponent(      
+          
           inputText
         )}`,
         {

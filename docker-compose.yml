@@ -10,7 +10,7 @@ services:
       - backend2
 
   backend1:
-    image: fastapi-backend # Replace with your backend1 image name
+    image: fastapi_app # Replace with your backend1 image name
     ports:
       - "5000:5000"
 
