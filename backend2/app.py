@@ -36,13 +36,7 @@ def index():
     response = send_file(IMAGE_PATH, mimetype='image/jpeg')
     return add_cors_headers(response)
     
-    # return res
-
-# @app.route('/get_image')
-# def get_image():
-#     # Replace 'path/to/your/image.jpg' with the actual path to your image file
-#     image_path = 'abc.jpg'
-#     return send_file(image_path, mimetype='image/jpg')
+    
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8002)

@@ -45,9 +45,7 @@
 .dec-2{
     background-color: rgb(230, 228, 231);
     outline: 2px solid rgb(223, 214, 214);
-    /* padding: 10px 700px; */
     border-radius: 5px;
-    /* align-items: normal; */
     flex: 90%;
     text-align: start;
     padding: 1%;
@@ -57,62 +55,25 @@
     background-color: #007BFF;
     color: white;
     flex: 6%;
-    /* padding: 10px 20px; */
     border: none;
     border-radius: 5px;
     padding: 1%;
     cursor: pointer;
     margin-left: 2%;
-    /* margin-top: 10px; */
 }
-/* .btnn-1:hover {
-    background-color: #090e13;
-  } */
+
 
   
-  /* .sec-1 {
-    font-size: 24px;
-    font-weight: bold;
-  }
+
   
-  .maindiv-1 {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px 0;
-  }
+
   
-  .subdiv-1 {
-    flex: 1;
-    font-size: 20px;
-    font-weight: bold;
-  }
+
   
-  .subdiv-2 {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-  }
+
   
-  .dec-2 {
-    font-size: 16px;
-  }
+
+ 
   
-  .btnn-1 {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .btnn-1:hover {
-    background-color: #0056b3;
-  } */
+ 
   

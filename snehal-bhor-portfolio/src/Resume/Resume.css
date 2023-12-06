@@ -135,9 +135,9 @@
   align-items: center;
 }
 
-.src {
-  width: 100px;
-  height: 100px;
+.python1{
+  width:100px;
+  height:100px
 }
 
 .src2 {
@@ -276,7 +276,7 @@
   align-items: center;
   border: 0px;
   outline: 2px solid rgb(0, 0, 0);
-  border-radius: 5px !important; /* This sets the border radius to 5 pixels */
+  border-radius: 5px !important; 
 }
 
 .childA {
@@ -360,8 +360,6 @@
   background-color: rgb(177, 177, 185);
   display: flex;
   width: 100%;
-  /* align-items: center; */
-  /* justify-content: space-between; */
   padding: 0.5%;
   outline: 1px solid rgb(10, 1, 1);
 

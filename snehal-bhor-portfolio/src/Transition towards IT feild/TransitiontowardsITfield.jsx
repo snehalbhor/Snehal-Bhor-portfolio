@@ -2,8 +2,6 @@ import React from "react";
 import "./TransitiontowardsITfield.css";
 import { GoDotFill } from "react-icons/go";
 
-
-
 const TransitiontowardsITfield = () => {
   return (
     <div>
@@ -15,7 +13,7 @@ const TransitiontowardsITfield = () => {
             <div className="tsubdiv-1">
               <strong>
                 What aspects of the IT field are most appealing to me, and what
-                motivates me to pursue a career in IT
+                motivates me to pursue a career in IT?
               </strong>
             </div>
           </div>
@@ -58,13 +56,15 @@ const TransitiontowardsITfield = () => {
               design to contribute meaningfully to the field. I aspire to be
               known for my expertise and innovation in IT, and I'm determined to
               prove myself through hard work and dedication.
-              <br /> <br/><strong>Personal Life:</strong>
+              <br /> <br />
+              <strong>Personal Life:</strong>
               As a married woman who embarked on a career change in 2023, I
               understand the importance of balance. Over the next five years, I
               aim to maintain a fulfilling personal life.Achieving a harmonious
               work-life balance is essential, and I'll ensure that my personal
               life complements my career ambitions.
-              <br /><br/>
+              <br />
+              <br />
               Overall, my vision for the next five years is a successful and
               fulfilling career in the IT field while nurturing a happy and
               supportive personal life.
@@ -83,45 +83,58 @@ const TransitiontowardsITfield = () => {
 
           <div className="tsubdiv-2">
             <div className="tdec-2">
-            < GoDotFill size={20}/><strong>React.js:</strong>I've learned React.js, which is a
+              <GoDotFill size={20} />
+              <strong>React.js:</strong>I've learned React.js, which is a
               popular JavaScript library for building user interfaces.
               <br />
-              < GoDotFill size={20}/><strong>Express.js:</strong>I've worked with Express.js, a Node.js
+              <GoDotFill size={20} />
+              <strong>Express.js:</strong>I've worked with Express.js, a Node.js
               web application framework, to simplify web application and API
               development.
               <br />
-              < GoDotFill size={20}/><strong>HTML:</strong>I have experience with HTML, the standard
-              language for creating web pages and web applications.<br/>
-              < GoDotFill size={20}/><strong>Python:</strong>I'm proficient in Python, a versatile and
+              <GoDotFill size={20} />
+              <strong>HTML:</strong>I have experience with HTML, the standard
+              language for creating web pages and web applications.
+              <br />
+              <GoDotFill size={20} />
+              <strong>Python:</strong>I'm proficient in Python, a versatile and
               widely-used programming language with various applications.
               <br />
-              < GoDotFill size={20}/> <strong>CSS (Cascading Style Sheets):</strong>I can style
-              and format web pages using CSS (Cascading Style Sheets) to make
-              them visually appealing.
+              <GoDotFill size={20} />{" "}
+              <strong>CSS (Cascading Style Sheets):</strong>I can style and
+              format web pages using CSS (Cascading Style Sheets) to make them
+              visually appealing.
               <br />
-              < GoDotFill size={20}/><strong>MongoDB:</strong>I've used MongoDB for its flexibility and
+              <GoDotFill size={20} />
+              <strong>MongoDB :</strong>I've used MongoDB for its flexibility and
               scalability in web development.
               <br />
-              < GoDotFill size={20}/><strong>Artificial Intelligence (basics):</strong>I have a basic
+              <GoDotFill size={20} />
+              <strong>Artificial Intelligence (basics) :</strong>I have a basic
               understanding of artificial intelligence concepts, including
               machine learning and neural networks.
-              <br /> 
-              < GoDotFill size={20}/><strong>Git & GitHub:</strong>I use Git for version control
-              and GitHub as a platform for collaborative software development
-              and code management.
               <br />
-              < GoDotFill size={20}/><strong>Docker and Kubernetes:</strong>
+              <GoDotFill size={20} />
+              <strong>Git & GitHub :</strong>I use Git for version control and
+              GitHub as a platform for collaborative software development and
+              code management.
+              <br />
+              <GoDotFill size={20} />
+              <strong>Docker and Kubernetes :</strong>
               I'm familiar with Docker and Kubernetes, which I use for
               containerization and orchestration of applications for deployment
               and scaling.
               <br />
-              < GoDotFill size={20}/><strong>Jenkins:</strong>I've set up automation pipelines using
+              <GoDotFill size={20} />
+              <strong>Jenkins :</strong>I've set up automation pipelines using
               Jenkins, an open-source automation server.
               <br />
-              < GoDotFill size={20}/><strong>Jira :</strong>For project management and issue tracking,
+              <GoDotFill size={20} />
+              <strong>Jira :</strong>For project management and issue tracking,
               I've used Jira in various software development projects.
               <br />
-              < GoDotFill size={20}/><strong>FastAPI:</strong>I've built web APIs and microservices
+              <GoDotFill size={20} />
+              <strong>FastAPI :</strong>I've built web APIs and microservices
               using FastAPI and Flask, both Python web frameworks.
               <br />
               With these skills, I'm well-prepared for various software
@@ -141,17 +154,30 @@ const TransitiontowardsITfield = () => {
 
           <div className="tsubdiv-2">
             <div className="tdec-2">
-            During my learning phase in my IT career, I've had the opportunity to explore a wide range of projects related to different technologies. Some of these projects have focused on pure frontend development, specifically in the realm of financial management user interfaces. Others have been more comprehensive, involving both frontend and backend development, often requiring me to work with databases. In certain cases, I've even delved into the deployment side of things, using tools like Docker and Kubernetes to manage applications effectively in a production environment.
-
-In terms of the technologies I've worked with, I've gained experience with a variety of them, including React for frontend development, Python for backend work, and even deep learning, which points to a diverse skill set.
-
-As a result, I've built a solid portfolio of projects that showcase my capabilities and the breadth of my experience in the IT field.
-<div>click the button to see the projects.    <a
-                href="http://localhost:3000/githubprojectlink"
-                className="btnn"
-              >
-                Click here
-              </a></div> 
+              During my learning phase in my IT career, I've had the opportunity
+              to explore a wide range of projects related to different
+              technologies. Some of these projects have focused on pure frontend
+              development, specifically in the realm of financial management
+              user interfaces. Others have been more comprehensive, involving
+              both frontend and backend development, often requiring me to work
+              with databases. In certain cases, I've even delved into the
+              deployment side of things, using tools like Docker and Kubernetes
+              to manage applications effectively in a production environment. In
+              terms of the technologies I've worked with, I've gained experience
+              with a variety of them, including React for frontend development,
+              Python for backend work, and even deep learning, which points to a
+              diverse skill set. As a result, I've built a solid portfolio of
+              projects that showcase my capabilities and the breadth of my
+              experience in the IT field.
+              <div>
+                click the button to see the projects.
+                <a
+                  href="http://localhost:3000/githubprojectlink"
+                  className="btnn"
+                >
+                  Click here
+                </a>
+              </div>
             </div>
           </div>
         </div>

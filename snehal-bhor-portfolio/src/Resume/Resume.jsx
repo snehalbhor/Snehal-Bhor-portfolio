@@ -2,7 +2,7 @@ import "./Resume.css";
 import React, { useRef } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
-import photo from "./sneha.JPG"; // Make sure this image file exists
+import photo from "./sneha.JPG"; 
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { GrMail } from "react-icons/gr";
 import { FaLocationDot } from "react-icons/fa6";
@@ -16,16 +16,15 @@ const Resume = () => {
   const handleDownloadClick = () => {
     const pdf = new jsPDF();
 
-    // Generate the PDF for page 1
+   
     html2canvas(page1Ref.current).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
-      pdf.addImage(imgData, "PNG", 10, 10, 190, 0); // Assuming the width of A4 page
+      pdf.addImage(imgData, "PNG", 10, 10, 190, 0); 
       pdf.addPage();
-
-      // You can add content for page 2 here
+    
       html2canvas(page2Ref.current).then((canvas2) => {
         const imgData2 = canvas2.toDataURL("image/png");
-        pdf.addImage(imgData2, "PNG", 10, 10, 190, 0); // Assuming the width of A4 page
+        pdf.addImage(imgData2, "PNG", 10, 10, 190, 0); 
         pdf.save("resume.pdf");
       });
     });
@@ -110,7 +109,7 @@ const Resume = () => {
             <div className="mainA">
               <div className="mainA-child-1">
                 {" "}
-                <img src="./pythonlogo.png" alt="" className="src" />
+                <img src="./pythonlogo.png" alt="" className="python1"/>
               </div>
               <div className="mainA-child-2">PYTHON</div>
             </div>
@@ -185,18 +184,18 @@ const Resume = () => {
             <div className="mainB">
               <div className="dot">
                 <GoDotFill size={25} />I have a strong foundation in HTML, which
-                is the backbone of web development,{" "}
+                is the backbone of web development.{" "}
               </div>
               <div className="dot">
                 <GoDotFill size={25} />I prioritize the use of semantic HTML
                 elements to enhance accessibility and search engine
                 optimization, ensuring that web content is easily understandable
-                and navigable
+                and navigable.
               </div>
               <div className="dot">
                 <GoDotFill size={25} />I have experience in creating HTML forms
                 and implementing client-side input validation to enhance user
-                interactivity and data integrity
+                interactivity and data integrity.
               </div>
             </div>
           </div>
@@ -241,7 +240,7 @@ const Resume = () => {
               <div className="dot1">
                 <GoDotFill size={25} />I am proficient in creating and managing
                 MongoDB databases, collections, and documents, ensuring
-                efficient data storage and retrieval
+                efficient data storage and retrieval.
               </div>
               <div className="dot1">
                 <GoDotFill size={25} />I have completed a project on GitHub that
@@ -450,7 +449,7 @@ const Resume = () => {
             </div>
             <div className="dot1">
               <GoDotFill size={25} />I use Jira's reporting and dashboard
-              features to track project progress,{" "}
+              features to track project progress.{" "}
             </div>
           </div>
         </div>

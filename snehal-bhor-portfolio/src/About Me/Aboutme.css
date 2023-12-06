@@ -1,114 +1,83 @@
-/* .firstdiv{
-    color: blue;
-    font-weight: 500;
-    font-size: 20px;
-    background-color: rgb(228, 223, 223);
-    width: 90%;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 1%;
-    padding: 1%;
-    border: 0px;
-    border-radius: 5px;
-     */
-    /* outline: 2px solid black; */
-/* } */
 .main-1 {
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 20px;
-    background-image: url('/public/full_stack-min.jpg'); /* Replace 'your-image.jpg' with the URL or path to your image */
-    background-size: cover; /* Cover the entire element with the background image */
-    background-position: center center; /* Center the background image horizontally and vertically */
-    /* width: 90%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    /* padding: 1%; */
-    border: 0px;
-    border-radius: 5px;
-    text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+  background-image: url("/public/full_stack-min.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 0px;
+  border-radius: 5px;
+  text-align: center;
 }
 .firstdiv {
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 20px;
-    background-color: rgb(228, 223, 223);
-    width: 90%;
-    display: flex; /* Use flexbox to center the content */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    margin: 0 auto; /* Center horizontally within the parent container */
-    padding: 1%;
-    border: 0px;
-    border-radius: 5px;
-    text-align: center; /* Center text within the div */
-    margin-top: 2%;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+  background-color: rgb(228, 223, 223);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1%;
+  border: 0px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2%;
 }
 
-.seconddiv{
-    display: flex;
-    /* background-color: blueviolet; */
-    /* outline: 2px solid black; */
-    margin-top: 1%;
-    /* align-items: cente; */
-    padding: 6%;
-    justify-content: space-around;
+.seconddiv {
+  display: flex;
+  margin-top: 1%;
+  padding: 6%;
+  justify-content: space-around;
 }
-.thirddiv-1{
-    background-color: rgb(158, 198, 233);
-    width: 400px; 
-    height: 700px; 
-    border: 0px;
-    border-radius: 10px;
-    /* margin-top: -3%; */
-    /* margin-right: 7%; */
-    /* position: relative */
-    flex: 30%;
-    outline: 1px solid rgb(216, 141, 141);
-    border: 8px solid pink; 
-
+.thirddiv-1 {
+  background-color: rgb(158, 198, 233);
+  width: 400px;
+  height: 700px;
+  border: 0px;
+  border-radius: 10px;
+  flex: 30%;
+  outline: 1px solid rgb(216, 141, 141);
+  border: 8px solid pink;
 }
-.thirddiv-2{
-    width: 70%;
-    height: 700px;
-    background-color: aliceblue;
-    margin-top: 5%;
-    margin-left: -1%;
-    /* margin-right: 4%; */
-     outline: 5px solid rgb(241, 191, 191);
-     flex: 70%;
-     border: 0px;
-     border-radius: 5px;
-     line-height: 250%;
-     font-weight: 500;
-     font-size: 20px;
-     
-     /* text-align: start; */
-     
-     
-
+.thirddiv-2 {
+  width: 70%;
+  height: 700px;
+  background-color: aliceblue;
+  margin-top: 5%;
+  margin-left: -1%;
+  outline: 5px solid rgb(241, 191, 191);
+  flex: 70%;
+  border: 0px;
+  border-radius: 5px;
+  line-height: 250%;
+  font-weight: 500;
+  font-size: 20px;
 }
-.main1{
-    font-weight: 600;
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 0, 0);
+.main1 {
+  font-weight: 600;
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 0, 0);
 }
-.subdiv{
-margin: 1%;
+.subdiv {
+  margin: 1%;
 }
 
 .image-container {
-    max-width: 100%; /* The image container won't exceed the width of its parent */
-    max-height: 100%; /* The image container won't exceed the height of its parent */
-  }
-  
-  /* Style the image element itself (if needed) */
-  .image-container img {
-    width: 100%; /* Make the image take up 100% of its container's width */
-    height: 100%; /* Maintain the image's aspect ratio */
-  }
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}

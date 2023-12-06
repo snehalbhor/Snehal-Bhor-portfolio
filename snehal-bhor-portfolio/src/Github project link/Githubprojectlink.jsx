@@ -33,7 +33,7 @@ const Githubprojectlink = () => {
               Project No.02: <strong>p06-react-python-flask-deep-learning-ai</strong>
             </div>
             <div className="subdiv-2">
-              <div className="dec-2">Technology Used- <strong>React JS, html, python, flask</strong><br/> In this project </div>
+              <div className="dec-2">Technology Used- <strong>React JS, html, python, flask</strong><br/> In this project I have used mentioned technologies and studied about AI basics and flask. I have used python for backend.   </div>
               <a
                 href="https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai"
                 className="btnn-1"
@@ -51,7 +51,7 @@ const Githubprojectlink = () => {
               
             </div>
             <div className="subdiv-2">
-              <div className="dec-2">Technology Used- <strong>React JS, html, python, docker, kubernets</strong><br/>In this project </div>
+              <div className="dec-2">Technology Used- <strong>React JS, html, python, docker, kubernets</strong><br/>In this project I have ued mentioned techologies and deployed it with docker and kubernets. </div>
               <a
                 href="https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning"
                 className="btnn-1"
@@ -69,7 +69,7 @@ const Githubprojectlink = () => {
               No.04:  <strong>p09-deployment-docker-kubernets-jenkins-react-python-deep-learning.</strong>
             </div>
             <div className="subdiv-2">
-              <div className="dec-2">Technology Used- <strong>React JS , javascript, html, css,python, docker, kubernets, jenkins </strong> <br/> In this projectI used mentioned technologies, </div>
+              <div className="dec-2">Technology Used- <strong>React JS , javascript, html, css,python, docker, kubernets, jenkins </strong> <br/> In this project I have ued mentioned techologies and deployed it with docker, kubernets and jenkins. </div>
               <a
                 href="https://github.com/snehalbhor/p09-deployment-docker-kubernets-jenkins-react-python-deep-learning"
                 className="btnn-1"
@@ -101,7 +101,7 @@ const Githubprojectlink = () => {
           <div className="maindiv-1">
             <div className="subdiv-1">Project No.06: <strong>p04-css-project</strong></div>
             <div className="subdiv-2">
-              <div className="dec-2">Technology Used- <strong>React JS, javascript, html, css</strong> <br/> In this project I used React JS, javascript, html, css. Through this project I gained valuable experience in building website and user interface design </div>
+              <div className="dec-2">Technology Used- <strong>React JS, javascript, html, css</strong> <br/> In this project I used React JS, javascript, html, css. Through this project I gained valuable experience in building website and user interface design. </div>
               <a
                 href="https://github.com/snehalbhor/p04-css-project"
                 className="btnn-1"
@@ -119,7 +119,7 @@ const Githubprojectlink = () => {
           <div className="maindiv-1">
             <div className="subdiv-1">Project No.07: <strong>p02-react-exercise</strong></div>
             <div className="subdiv-2">
-              <div className="dec-2">Technology Used - <strong>React</strong><br/> </div>
+              <div className="dec-2">Technology Used - <strong>React JS, html,</strong><br/>In this p02 i have solved some questions related to react for practice.</div>
               <a
                 className="btnn-1"
                 href="https://github.com/snehalbhor/p02-react-exercise"
@@ -134,7 +134,7 @@ const Githubprojectlink = () => {
           <div className="maindiv-1">
             <div className="subdiv-1">Project No.08:<strong>p03-snehal-bhor-portfolio</strong></div>
             <div className="subdiv-2">
-              <div className="dec-2">In progress</div>
+              <div className="dec-2">Technology Used - <strong>React JS, html, python, css, fastAPI, flask, AI </strong><br/>In this project I have used mentioned technologies from which I created all the sections which gives you thorough information about my profile.</div>
               <a
                 className="btnn-1"
                 href="https://github.com/snehalbhor/p03-Snehal-Bhor-portfolio"
