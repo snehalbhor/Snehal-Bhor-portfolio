@@ -690,8 +690,7 @@ const Resume = () => {
             <div className="stone1">
               <div className="onechild1">
                 <strong>Software Developer Intern (remote) : </strong> Working
-                in a bebsite development frontend backend etc., Done work on css
-                react JS, python, html. I was working in EXA MOBILITY.
+                as a website developer from  frontend & backend side using React JS, CSS, HTML, python and some microservices technologies at EXA MOBILITY.
               </div>
               <br />
               <div className="onechild2">
