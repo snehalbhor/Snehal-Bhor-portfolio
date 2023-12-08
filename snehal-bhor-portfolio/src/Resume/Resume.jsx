@@ -2,7 +2,7 @@ import "./Resume.css";
 import React, { useRef } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
-import photo from "./sneha.JPG"; 
+import photo from "./sneha.JPG";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { GrMail } from "react-icons/gr";
 import { FaLocationDot } from "react-icons/fa6";
@@ -13,21 +13,182 @@ const Resume = () => {
   const page1Ref = useRef();
   const page2Ref = useRef();
 
-  const handleDownloadClick = () => {
+  const handleDownloadClick = async () => {
     const pdf = new jsPDF();
 
-   
-    html2canvas(page1Ref.current).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      pdf.addImage(imgData, "PNG", 10, 10, 190, 0); 
-      pdf.addPage();
-    
-      html2canvas(page2Ref.current).then((canvas2) => {
-        const imgData2 = canvas2.toDataURL("image/png");
-        pdf.addImage(imgData2, "PNG", 10, 10, 190, 0); 
-        pdf.save("resume.pdf");
-      });
-    });
+    const addClickableLink = (
+      xPercent,
+      yPercent,
+      divWidth,
+      divHeight,
+      url,
+      text,
+      fontSize,
+      page // Adding 'page' parameter to determine the page number for the link
+    ) => {
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const pageHeight = pdf.internal.pageSize.getHeight();
+      const linkWidth = pdf.getStringUnitWidth(text) * fontSize;
+      const linkHeight = pdf.internal.getLineHeight();
+
+      const x = (pageWidth * xPercent) / 100;
+      const y = (pageHeight * yPercent) / 100;
+
+      const rectWidth = (divWidth * linkWidth) / pageWidth;
+      const rectHeight = (divHeight * linkHeight) / pageHeight;
+
+      pdf
+        .setFillColor(255, 255, 255, 0)
+        .setDrawColor(255, 255, 255, 0)
+        // .rect(x, y - rectHeight, rectWidth, rectHeight)
+        .setLineWidth(0);
+
+      pdf.setPage(page); // Set the provided page number for the link
+      pdf.link(x, y - rectHeight, rectWidth, rectHeight, { url });
+    };
+
+    try {
+      const canvas1 = await html2canvas(page1Ref.current);
+      const imgData1 = canvas1.toDataURL("image/png");
+      pdf.addImage(imgData1, "PNG", 10, 10, 190, 0);
+
+      // Assuming the div has a width of 200px and height of 20px
+      const divWidth = 90; // Replace with actual div width
+      const divHeight = 50; // Replace with actual div height
+
+      addClickableLink(
+        70,
+        8.5,
+        divWidth,
+        divHeight,
+        "mailto:snehalsp65@gmail.com",
+        "snehalsp65@gmail.com",
+        8,
+        1 // 1 indicates the first page
+      );
+      addClickableLink(
+        72,
+        11,
+        divWidth,
+        divHeight,
+        "tel:+19607851094",
+        "9607851094",
+        8,
+        1 // 1 indicates the first page
+      );
+      addClickableLink(
+        70,
+        15.3,
+        divWidth,
+        divHeight,
+        "https://github.com/snehalbhor?tab=repositories",
+        "https://github.com/snehalbhor?tab=repositories",
+        8,
+        1 // 1 indicates the first page
+      );
+
+      pdf.addPage(); // Add a new page (page 2)
+
+      const canvas2 = await html2canvas(page2Ref.current);
+      const imgData2 = canvas2.toDataURL("image/png");
+      pdf.addImage(imgData2, "PNG", 10, 10, 190, 0);
+
+      const divWidthPage2 = 70; // Replace with the actual width of the div on the second page
+      const divHeightPage2 = 57; // Replace with the actual height of the div on the second page
+
+      // Adjust the coordinates and dimensions to fit the link area properly within the page
+      addClickableLink(
+        88, // X coordinate percentage
+        59.2, // Y coordinate percentage
+        divWidthPage2, // Div width
+        divHeightPage2, // Div height
+        "https://github.com/snehalbhor/p01-core-css-react-financial-management-ui",
+        "GitHub Link",
+        8,
+        2 // 2 indicates the second page
+      );
+
+      addClickableLink(
+        88, // X coordinate percentage
+        61.4, // Y coordinate percentage
+        divWidthPage2, // Div width
+        divHeightPage2, // Div height
+        "https://github.com/snehalbhor/p02-react-exercise",
+        "GitHub Link",
+        8,
+        2 // 2 indicates the second page
+      );
+
+      addClickableLink(
+        88, // X coordinate percentage
+        63.4, // Y coordinate percentage
+        divWidthPage2, // Div width
+        divHeightPage2, // Div height
+        "https://github.com/snehalbhor/p05-python-exercise",
+        "GitHub Link",
+        8,
+        2 // 2 indicates the second page
+      );
+
+      addClickableLink(
+        88, // X coordinate percentage
+        65.5, // Y coordinate percentage
+        divWidthPage2, // Div width
+        divHeightPage2, // Div height
+        "https://github.com/snehalbhor/p04-css-project",
+        "GitHub Link",
+        8,
+        2 // 2 indicates the second page
+      );
+
+      addClickableLink(
+        88, // X coordinate percentage
+        68, // Y coordinate percentage
+        divWidthPage2, // Div width
+        divHeightPage2, // Div height
+        "https://github.com/snehalbhor/p09-deployment-docker-kubernets-jenkins-react-python-deep-learning",
+        "GitHub Link",
+        8,
+        2 // 2 indicates the second page
+      );
+
+      addClickableLink(
+        88, // X coordinate percentage
+        70.3, // Y coordinate percentage
+        divWidthPage2, // Div width
+        divHeightPage2, // Div height
+        "https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning",
+        "GitHub Link",
+        8,
+        2 // 2 indicates the second page
+      );
+
+      addClickableLink(
+        88, // X coordinate percentage
+        72.4, // Y coordinate percentage
+        divWidthPage2, // Div width
+        divHeightPage2, // Div height
+        "https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai",
+        "GitHub Link",
+        8,
+        2 // 2 indicates the second page
+      );
+
+      addClickableLink(
+        88, // X coordinate percentage
+        75.2, // Y coordinate percentage
+        divWidthPage2, // Div width
+        divHeightPage2, // Div height
+        "https://github.com/snehalbhor/p03-Snehal-Bhor-portfolio",
+        "GitHub Link",
+        8,
+        2 // 2 indicates the second page
+      );
+
+      pdf.save("resume.pdf");
+    } catch (error) {
+      console.error("Error generating PDF:", error);
+    }
   };
 
   return (
@@ -66,8 +227,9 @@ const Resume = () => {
                   <GrMail size={30} className="design" />
                 </div>
                 <div className="text-container">
-                  mail :{" "}
+                  mail : {"      "}
                   <a href="mailto:snehalsp65@gmail.com">snehalsp65@gmail.com</a>
+                  <span> &lt;-- Click to mail</span>
                 </div>
               </div>
 
@@ -75,24 +237,33 @@ const Resume = () => {
                 <div className="icon-container">
                   <BiSolidPhoneCall size={30} className="design" />
                 </div>
-                Call : 9607851094
+                <div>
+                  <span>Call : </span>
+                  <a href="tel:9607851094">9607851094</a>
+                  <span> &lt;-- Click to call</span>
+                </div>
               </div>
 
               <div className="part2child">
                 <div className="icon-container">
                   <FaLocationDot size={30} className="design" />
                 </div>
-                Location : Pune
+                <div className="lec">Location : Pune</div>
               </div>
 
               <div className="part2child">
                 <div className="icon-container">
                   <BsGithub size={30} className="design" />
                 </div>
-                github link :{" "}
-                <a href="https://github.com/snehalbhor?tab=repositories">
-                  https://github.com/snehalbhor
-                </a>
+                <div>
+                  <span>github link : </span>
+
+                  <a href="https://github.com/snehalbhor?tab=repositories">
+                    https://github.com/snehalbhor
+                  </a>
+
+                  <span> &lt;-- Click to View Girhub Repo</span>
+                </div>
               </div>
             </div>
           </div>
@@ -109,7 +280,7 @@ const Resume = () => {
             <div className="mainA">
               <div className="mainA-child-1">
                 {" "}
-                <img src="./pythonlogo.png" alt="" className="python1"/>
+                <img src="./pythonlogo.png" alt="" className="python1" />
               </div>
               <div className="mainA-child-2">PYTHON</div>
             </div>
@@ -518,13 +689,13 @@ const Resume = () => {
 
             <div className="stone1">
               <div className="onechild1">
-                <strong>Research Techician : </strong> As I have life science
-                background I was working in research field in Linq Therapeutics
-                Pvt Ltd.(Jehangir Clinical Development Centre, Pune)
+                <strong>Software Developer Intern (remote) : </strong> Working
+                in a bebsite development frontend backend etc., Done work on css
+                react JS, python, html. I was working in EXA MOBILITY.
               </div>
               <br />
               <div className="onechild2">
-                <strong>Duration : </strong> September 2021 To July 2022
+                <strong>Duration : </strong> September 2023 To december 2013
               </div>
             </div>
           </div>
@@ -537,9 +708,7 @@ const Resume = () => {
           </div>
           <div className="div1st">
             <div className="p5A">
-              <div className="childA">
-                10th
-              </div>
+              <div className="childA">10th</div>
               <div className="childB">
                 <strong>Year:</strong>2012
               </div>
@@ -553,9 +722,7 @@ const Resume = () => {
             </div>
 
             <div className="p5A">
-              <div className="childA">
-               12th
-              </div>
+              <div className="childA">12th</div>
               <div className="childB">
                 <strong>Year:</strong>2014
               </div>
@@ -569,9 +736,7 @@ const Resume = () => {
             </div>
 
             <div className="p5A">
-              <div className="childA">
-               Bachelor of Science (Microbiology)
-              </div>
+              <div className="childA">Bachelor of Science</div>
               <div className="childB">
                 <strong>Year:</strong>2018
               </div>
@@ -585,9 +750,7 @@ const Resume = () => {
             </div>
 
             <div className="p5A">
-              <div className="childA">
-                Masters of Science (Microbiology)
-              </div>
+              <div className="childA">Masters of Science</div>
               <div className="childB">
                 <strong>Year:</strong>2020
               </div>
@@ -732,16 +895,32 @@ const Resume = () => {
 
         <div className="subdivn-2">
           <div className="decn-2">
-          <GoDotFill size={25} /><strong >Continuous Learning:</strong>Over the next five years, I aspire to engage in ongoing learning and development to enhance my skill set and knowledge.<br/>
-          <GoDotFill size={25} /><strong>Technical Officer Role:</strong>My goal is to secure a position as a technical officer in a reputable organization, contributing my expertise to its success.<br/>
-          <GoDotFill size={25} /><strong>Self-Improvement: </strong>I am committed to self-improvement in all aspects of life, striving for personal growth and a steady career progression.<br/>
-          <GoDotFill size={25} /><strong>Spousal Support: </strong>My spouse is a significant source of inspiration and support, motivating me to explore new horizons and providing encouragement in my career pursuits.<br/>
-          <GoDotFill size={25} /><strong>Family Planning: </strong>For the next five years, my spouse and I have chosen not to have children, allowing us to focus on our personal and professional growth.
+            <GoDotFill size={25} />
+            <strong>Continuous Learning:</strong>Over the next five years, I
+            aspire to engage in ongoing learning and development to enhance my
+            skill set and knowledge.
+            <br />
+            <GoDotFill size={25} />
+            <strong>Technical Officer Role:</strong>My goal is to secure a
+            position as a technical officer in a reputable organization,
+            contributing my expertise to its success.
+            <br />
+            <GoDotFill size={25} />
+            <strong>Self-Improvement: </strong>I am committed to
+            self-improvement in all aspects of life, striving for personal
+            growth and a steady career progression.
+            <br />
+            <GoDotFill size={25} />
+            <strong>Spousal Support: </strong>My spouse is a significant source
+            of inspiration and support, motivating me to explore new horizons
+            and providing encouragement in my career pursuits.
+            <br />
+            <GoDotFill size={25} />
+            <strong>Family Planning: </strong>For the next five years, my spouse
+            and I have chosen not to have children, allowing us to focus on our
+            personal and professional growth.
           </div>
-         
         </div>
-
-
       </div>
 
       <div>

@@ -1,4 +1,4 @@
-     1  sudo apt-get install python3
+    1  sudo apt-get install python3
     2  sudo apt-get install python3-pip
     3  sudo pip3 install [jupyter](https://saturncloud.io/glossary/Jupyter)
     4  pip install jupyterlab
@@ -700,3 +700,86 @@
   700  uvicorn main:app --reload
   701  cd ..
   702  history >hs.txt 
+  703  cd snehal-bhor-portfolio
+  704  npm start
+  705  nvm install  --latest-npm
+  706  npm start
+  707  docker images
+  708  docker ps
+  709  docker rmi c3f4389ceb93   
+  710  docker rmi -f     c3f4389ceb93   
+  711  cd backend1
+  712  docker build -t fastapi_app .
+  713  docker images
+  714  cd ..
+  715  docker-compose up -d
+  716  docker ps
+  717  docker ps -a
+  718  docker logs 88422aced9eb
+  719  docker ps
+  720  docker logs 2ba34c0112a4
+  721  docker logs -f  2ba34c0112a4
+  722  docker images
+  723  docker rmi 749637d300f7
+  724  docker rmi -f 749637d300f7   
+  725  docker-compose down
+  726  docker rmi -f 749637d
+  727  docker build -t frontend .
+  728  cd snehal-bhor-portfolio
+  729  docker build -t frontend .
+  730  docker images
+  731  docker-compose up -d
+  732  docker-compose down
+  733  docker rmi a26aad8f8e01   
+  734  docker emi 1f0ff3eea956
+  735  docker images
+  736  docker rmi 1f0ff3eea956   
+  737  cd ..
+  738  docker images
+  739  docker ps -a
+  740  docker images
+  741  docker build -t flask-backend
+  742  docker build -t flask-backend .
+  743  cd backend2
+  744  docker build -t flask-backend .
+  745  docker images
+  746  cd ..
+  747  cd snehal-bhor-portfolio
+  748  docker build -t frontend .
+  749  cd ..
+  750  docker-compose up -d
+  751  docker ps
+  752  docker ps -a
+  753  docker logs f6f244cf71f3
+  754  docker-compos
+  755  cd backend2
+  756  docker images
+  757  docker rmi 76dc06f4580b 
+  758  docker images
+  759  docker system prune
+  760  docker images
+  761  docker images
+  762  docker-compose up -d
+  763  docker-compose down
+  764  cd ..
+  765  docker-compose up -d
+  766  docker ps
+  767  docker ps -a
+  768  docker logs -f aebdc6a1b4f5
+  769  git status
+  770  git add -A
+  771  git status
+  772  git commit -m "docker"
+  773  git status
+  774  git remote -v
+  775  git push -u origin master
+  776  docker images
+  777  docker ps
+  778  docker rmi 6d7aa62efc8f 
+  779  docker rmi 6d7aa62efc8f
+  780  docker rmi -f 6d7aa62efc8f
+  781  docker images
+  782  cd snehal-bhor-portfolio
+  783  nvm install  --latest-npm
+  784  npm start
+  785  history >hs1.txt
