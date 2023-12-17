@@ -9,6 +9,10 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm install
+ENV NEW_RELIC_NO_CONFIG_FILE=true
+ENV NEW_RELIC_DISTRIBUTED_TRACING_ENABLED=true \
+NEW_RELIC_LOG=stdout
+# etc.
 
 # Copy the entire current directory into the container at /app
 COPY . .

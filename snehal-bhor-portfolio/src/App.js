@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import Aboutme from "./About Me/Aboutme";
 import "./App.css";
+// require('newrelic');
 import Navbar from "./Navbar/Navbar";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

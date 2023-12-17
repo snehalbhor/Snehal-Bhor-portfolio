@@ -1,4 +1,4 @@
-     1  sudo apt-get install python3
+    1  sudo apt-get install python3
     2  sudo apt-get install python3-pip
     3  sudo pip3 install [jupyter](https://saturncloud.io/glossary/Jupyter)
     4  pip install jupyterlab
@@ -700,3 +700,7 @@
   700  uvicorn main:app --reload
   701  cd ..
   702  history >hs.txt 
+
+
+  docker run -e NEW_RELIC_LICENSE_KEY=3c1b8fb78e8b4aff565817f8571629dbFFFFNRAL -e NEW_RELIC_APP_NAME="snehal-bhor-portfolio" your_image_name:latest
+

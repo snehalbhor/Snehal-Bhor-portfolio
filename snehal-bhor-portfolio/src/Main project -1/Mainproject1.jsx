@@ -6,13 +6,17 @@ import fastapiContext from "../context/fastapi/fastapiContext";
 const Mainproject1 = () => {
   const { inputText, setInputText, result, fetchData } =
     useContext(fastapiContext);
-    
 
   const handleInputClick = (event) => {
     setInputText(event.target.value);
   };
 
   const handlePredictClick = async () => {
+    if (inputText.length < 10) {
+      console.log("Please Enter Valid Question.");
+      return;
+    }
+
     await fetchData();
   };
   return (

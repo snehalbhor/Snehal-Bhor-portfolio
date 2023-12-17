@@ -27,15 +27,47 @@ const Githubprojectlink = () => {
           </div>
         </div>
 
+
         <div>
           <div className="maindiv-1">
-            <div className="subdiv-1">
-              Project No.02: <strong>p06-react-python-flask-deep-learning-ai</strong>
-            </div>
+            <div className="subdiv-1">Project No.02: <strong>p02-react-exercise</strong></div>
             <div className="subdiv-2">
-              <div className="dec-2">Technology Used- <strong>React JS, html, python, flask</strong><br/> In this project I have used mentioned technologies and studied about AI basics and flask. I have used python for backend.   </div>
+              <div className="dec-2">Technology Used - <strong>React JS, html,</strong><br/>In this p02 i have solved some questions related to react for practice.</div>
               <a
-                href="https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai"
+                className="btnn-1"
+                href="https://github.com/snehalbhor/p02-react-exercise"
+              >
+                Click here
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div className="maindiv-1">
+            <div className="subdiv-1">Project No.03:<strong>p03-snehal-bhor-portfolio</strong></div>
+            <div className="subdiv-2">
+              <div className="dec-2">Technology Used - <strong>React JS, html, python, css, fastAPI, flask, AI </strong><br/>In this project I have used mentioned technologies from which I created all the sections which gives you thorough information about my profile.</div>
+              <a
+                className="btnn-1"
+                href="https://github.com/snehalbhor/p03-Snehal-Bhor-portfolio"
+              >
+                Click here
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="maindiv-1">
+            <div className="subdiv-1">Project No.04: <strong>p04-css-project</strong></div>
+            <div className="subdiv-2">
+              <div className="dec-2">Technology Used- <strong>React JS, javascript, html, css</strong> <br/> In this project I used React JS, javascript, html, css. Through this project I gained valuable experience in building website and user interface design. </div>
+              <a
+                href="https://github.com/snehalbhor/p04-css-project"
                 className="btnn-1"
               >
                 Click here
@@ -44,41 +76,6 @@ const Githubprojectlink = () => {
           </div>
         </div>
 
-        <div>
-          <div className="maindiv-1">
-            <div className="subdiv-1">
-              Project No.03: <strong>p07-deployment-docker-kubernets-react-python-deep-learning</strong>
-              
-            </div>
-            <div className="subdiv-2">
-              <div className="dec-2">Technology Used- <strong>React JS, html, python, docker, kubernets</strong><br/>In this project I have ued mentioned techologies and deployed it with docker and kubernets. </div>
-              <a
-                href="https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning"
-                className="btnn-1"
-              >
-                Click here
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="maindiv-1">
-            <div className="subdiv-1">
-              Project
-              No.04:  <strong>p09-deployment-docker-kubernets-jenkins-react-python-deep-learning.</strong>
-            </div>
-            <div className="subdiv-2">
-              <div className="dec-2">Technology Used- <strong>React JS , javascript, html, css,python, docker, kubernets, jenkins </strong> <br/> In this project I have ued mentioned techologies and deployed it with docker, kubernets and jenkins. </div>
-              <a
-                href="https://github.com/snehalbhor/p09-deployment-docker-kubernets-jenkins-react-python-deep-learning"
-                className="btnn-1"
-              >
-                Click here
-              </a>
-            </div>
-          </div>
-        </div>
 
         <div>
           <div className="maindiv-1">
@@ -97,13 +94,19 @@ const Githubprojectlink = () => {
           </div>
         </div>
 
+
+
+
+
         <div>
           <div className="maindiv-1">
-            <div className="subdiv-1">Project No.06: <strong>p04-css-project</strong></div>
+            <div className="subdiv-1">
+              Project No.06: <strong>p06-react-python-flask-deep-learning-ai</strong>
+            </div>
             <div className="subdiv-2">
-              <div className="dec-2">Technology Used- <strong>React JS, javascript, html, css</strong> <br/> In this project I used React JS, javascript, html, css. Through this project I gained valuable experience in building website and user interface design. </div>
+              <div className="dec-2">Technology Used- <strong>React JS, html, python, flask</strong><br/> In this project I have used mentioned technologies and studied about AI basics and flask. I have used python for backend.   </div>
               <a
-                href="https://github.com/snehalbhor/p04-css-project"
+                href="https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai"
                 className="btnn-1"
               >
                 Click here
@@ -112,17 +115,17 @@ const Githubprojectlink = () => {
           </div>
         </div>
 
-        
-
-
         <div>
           <div className="maindiv-1">
-            <div className="subdiv-1">Project No.07: <strong>p02-react-exercise</strong></div>
+            <div className="subdiv-1">
+              Project No.07: <strong>p07-deployment-docker-kubernets-react-python-deep-learning</strong>
+              
+            </div>
             <div className="subdiv-2">
-              <div className="dec-2">Technology Used - <strong>React JS, html,</strong><br/>In this p02 i have solved some questions related to react for practice.</div>
+              <div className="dec-2">Technology Used- <strong>React JS, html, python, docker, kubernets</strong><br/>In this project I have ued mentioned techologies and deployed it with docker and kubernets. </div>
               <a
+                href="https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning"
                 className="btnn-1"
-                href="https://github.com/snehalbhor/p02-react-exercise"
               >
                 Click here
               </a>
@@ -130,20 +133,93 @@ const Githubprojectlink = () => {
           </div>
         </div>
 
+
         <div>
           <div className="maindiv-1">
-            <div className="subdiv-1">Project No.08:<strong>p03-snehal-bhor-portfolio</strong></div>
+            <div className="subdiv-1">Project No.08:<strong>p08-deployment-docker-kubernets-react-python-deep-learning
+</strong></div>
             <div className="subdiv-2">
               <div className="dec-2">Technology Used - <strong>React JS, html, python, css, fastAPI, flask, AI </strong><br/>In this project I have used mentioned technologies from which I created all the sections which gives you thorough information about my profile.</div>
               <a
                 className="btnn-1"
-                href="https://github.com/snehalbhor/p03-Snehal-Bhor-portfolio"
+                href="https://github.com/snehalbhor/p08-deployment-docker-kubernets-react-python-deep-learning"
               >
                 Click here
               </a>
             </div>
           </div>
         </div>
+
+        <div>
+          <div className="maindiv-1">
+            <div className="subdiv-1">
+              Project
+              No.09:  <strong>p09-deployment-docker-kubernets-jenkins-react-python-deep-learning.</strong>
+            </div>
+            <div className="subdiv-2">
+              <div className="dec-2">Technology Used- <strong>React JS , javascript, html, css,python, docker, kubernets, jenkins </strong> <br/> In this project I have ued mentioned techologies and deployed it with docker, kubernets and jenkins. </div>
+              <a
+                href="https://github.com/snehalbhor/p09-deployment-docker-kubernets-jenkins-react-python-deep-learning"
+                className="btnn-1"
+              >
+                Click here
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div className="maindiv-1">
+            <div className="subdiv-1">
+              Project
+              No.10:  <strong>p10-MERN-stack-Docker-Environmental-Website</strong>
+            </div>
+            <div className="subdiv-2">
+              <div className="dec-2">Technology Used- <strong>React JS , javascript, html, css, python, docker , MERN- MongoDB, Express, React, Node</strong> <br/> In this project I have ued mentioned techologies and deployed it with docker. </div>
+              <a
+                href="https://github.com/snehalbhor/p10-MERN-stack-Docker-Environmental-Website"
+                className="btnn-1"
+              >
+                Click here
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="maindiv-1">
+            <div className="subdiv-1">
+              Project
+              No.11:  <strong>p11-React.JS-python-docker-git-commands-exercise</strong>
+            </div>
+            <div className="subdiv-2">
+              <div className="dec-2"><br/> In this exercise I have written all the commands which i know and used in my projects.</div>
+              <a
+                href="https://github.com/snehalbhor/p11-React.JS-python-docker-git-commands-exercise"
+                className="btnn-1"
+              >
+                Click here
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+
+  
+
+   
+
+
+
+
+
+
 
       </div>
     </section>

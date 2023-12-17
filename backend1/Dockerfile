@@ -12,6 +12,7 @@ RUN pip install -r requirements.txt
 
 # Copy the entire current directory into the container at /app
 COPY . .
+ENV NEW_RELIC_NO_CONFIG_FILE=true
 
 # Expose the port that FastAPI runs on (5000 by default)
 EXPOSE 5000

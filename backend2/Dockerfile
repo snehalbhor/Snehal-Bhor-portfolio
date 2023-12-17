@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y libgl1-mesa-glx
 
 # Copy the requirements.txt file and install the Python dependencies
 COPY requirements.txt .
+ENV NEW_RELIC_NO_CONFIG_FILE=true
 
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt

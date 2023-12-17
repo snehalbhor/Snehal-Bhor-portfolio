@@ -24,7 +24,7 @@ const Resume = () => {
       url,
       text,
       fontSize,
-      page // Adding 'page' parameter to determine the page number for the link
+      page
     ) => {
       const pageWidth = pdf.internal.pageSize.getWidth();
       const pageHeight = pdf.internal.pageSize.getHeight();
@@ -40,10 +40,10 @@ const Resume = () => {
       pdf
         .setFillColor(255, 255, 255, 0)
         .setDrawColor(255, 255, 255, 0)
-        // .rect(x, y - rectHeight, rectWidth, rectHeight)
+
         .setLineWidth(0);
 
-      pdf.setPage(page); // Set the provided page number for the link
+      pdf.setPage(page);
       pdf.link(x, y - rectHeight, rectWidth, rectHeight, { url });
     };
 
@@ -52,9 +52,8 @@ const Resume = () => {
       const imgData1 = canvas1.toDataURL("image/png");
       pdf.addImage(imgData1, "PNG", 10, 10, 190, 0);
 
-      // Assuming the div has a width of 200px and height of 20px
-      const divWidth = 90; // Replace with actual div width
-      const divHeight = 50; // Replace with actual div height
+      const divWidth = 90;
+      const divHeight = 50;
 
       addClickableLink(
         70,
@@ -64,17 +63,17 @@ const Resume = () => {
         "mailto:snehalsp65@gmail.com",
         "snehalsp65@gmail.com",
         8,
-        1 // 1 indicates the first page
+        1
       );
       addClickableLink(
         72,
         11,
         divWidth,
         divHeight,
-        "tel:+19607851094",
+        "tel: 9607851094",
         "9607851094",
         8,
-        1 // 1 indicates the first page
+        1
       );
       addClickableLink(
         70,
@@ -84,106 +83,142 @@ const Resume = () => {
         "https://github.com/snehalbhor?tab=repositories",
         "https://github.com/snehalbhor?tab=repositories",
         8,
-        1 // 1 indicates the first page
+        1
       );
 
-      pdf.addPage(); // Add a new page (page 2)
+      pdf.addPage();
 
       const canvas2 = await html2canvas(page2Ref.current);
       const imgData2 = canvas2.toDataURL("image/png");
       pdf.addImage(imgData2, "PNG", 10, 10, 190, 0);
 
-      const divWidthPage2 = 70; // Replace with the actual width of the div on the second page
-      const divHeightPage2 = 57; // Replace with the actual height of the div on the second page
+      const divWidthPage2 = 70;
+      const divHeightPage2 = 57;
 
-      // Adjust the coordinates and dimensions to fit the link area properly within the page
       addClickableLink(
-        88, // X coordinate percentage
-        59.2, // Y coordinate percentage
-        divWidthPage2, // Div width
-        divHeightPage2, // Div height
+        88,
+        59.2,
+        divWidthPage2,
+        divHeightPage2,
         "https://github.com/snehalbhor/p01-core-css-react-financial-management-ui",
         "GitHub Link",
         8,
-        2 // 2 indicates the second page
+        2
       );
 
       addClickableLink(
-        88, // X coordinate percentage
-        61.4, // Y coordinate percentage
-        divWidthPage2, // Div width
-        divHeightPage2, // Div height
+        88,
+        61.4,
+        divWidthPage2,
+        divHeightPage2,
         "https://github.com/snehalbhor/p02-react-exercise",
         "GitHub Link",
         8,
-        2 // 2 indicates the second page
+        2
       );
 
       addClickableLink(
-        88, // X coordinate percentage
-        63.4, // Y coordinate percentage
-        divWidthPage2, // Div width
-        divHeightPage2, // Div height
-        "https://github.com/snehalbhor/p05-python-exercise",
-        "GitHub Link",
-        8,
-        2 // 2 indicates the second page
-      );
-
-      addClickableLink(
-        88, // X coordinate percentage
-        65.5, // Y coordinate percentage
-        divWidthPage2, // Div width
-        divHeightPage2, // Div height
-        "https://github.com/snehalbhor/p04-css-project",
-        "GitHub Link",
-        8,
-        2 // 2 indicates the second page
-      );
-
-      addClickableLink(
-        88, // X coordinate percentage
-        68, // Y coordinate percentage
-        divWidthPage2, // Div width
-        divHeightPage2, // Div height
-        "https://github.com/snehalbhor/p09-deployment-docker-kubernets-jenkins-react-python-deep-learning",
-        "GitHub Link",
-        8,
-        2 // 2 indicates the second page
-      );
-
-      addClickableLink(
-        88, // X coordinate percentage
-        70.3, // Y coordinate percentage
-        divWidthPage2, // Div width
-        divHeightPage2, // Div height
-        "https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning",
-        "GitHub Link",
-        8,
-        2 // 2 indicates the second page
-      );
-
-      addClickableLink(
-        88, // X coordinate percentage
-        72.4, // Y coordinate percentage
-        divWidthPage2, // Div width
-        divHeightPage2, // Div height
-        "https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai",
-        "GitHub Link",
-        8,
-        2 // 2 indicates the second page
-      );
-
-      addClickableLink(
-        88, // X coordinate percentage
-        75.2, // Y coordinate percentage
-        divWidthPage2, // Div width
-        divHeightPage2, // Div height
+        88,
+        63.4,
+        divWidthPage2,
+        divHeightPage2,
         "https://github.com/snehalbhor/p03-Snehal-Bhor-portfolio",
         "GitHub Link",
         8,
-        2 // 2 indicates the second page
+        2
       );
+
+      addClickableLink(
+        88,
+        65.5,
+        divWidthPage2,
+        divHeightPage2,
+        "https://github.com/snehalbhor/p04-css-project",
+        "GitHub Link",
+        8,
+        2
+      );
+
+      addClickableLink(
+        88,
+        68,
+        divWidthPage2,
+        divHeightPage2,
+        "https://github.com/snehalbhor/p05-python-exercise",
+        "GitHub Link",
+        8,
+        2
+      );
+
+      addClickableLink(
+        88,
+        70.3,
+        divWidthPage2,
+        divHeightPage2,
+        "https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai",
+        "GitHub Link",
+        8,
+        2
+      );
+
+
+
+      addClickableLink(
+        88,
+        73.1,
+        divWidthPage2,
+        divHeightPage2,
+        "https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning",
+        "GitHub Link",
+        8,
+        2
+      );
+
+      addClickableLink(
+        88,
+        75.1,
+        divWidthPage2,
+        divHeightPage2,
+        "https://github.com/snehalbhor/p08-deployment-docker-kubernets-react-python-deep-learning",
+        "GitHub Link",
+        8,
+        2
+      );
+
+      addClickableLink(
+        88,
+        77.8,
+        divWidthPage2,
+        divHeightPage2,
+        "https://github.com/snehalbhor/p09-deployment-docker-kubernets-jenkins-react-python-deep-learning",
+        "GitHub Link",
+        8,
+        2
+      );
+
+      addClickableLink(
+        88,
+        80.0,
+        divWidthPage2,
+        divHeightPage2,
+        "https://github.com/snehalbhor/p10-MERN-stack-Docker-Environmental-Website",
+        "GitHub Link",
+        8,
+        2
+      );
+
+
+      addClickableLink(
+        88,
+        82.2,
+        divWidthPage2,
+        divHeightPage2,
+        "https://github.com/snehalbhor/p11-React.JS-python-docker-git-commands-exercise",
+        "GitHub Link",
+        8,
+        2
+      );
+
 
       pdf.save("resume.pdf");
     } catch (error) {
@@ -690,7 +725,9 @@ const Resume = () => {
             <div className="stone1">
               <div className="onechild1">
                 <strong>Software Developer Intern (remote) : </strong> Working
-                as a website developer from  frontend & backend side using React JS, CSS, HTML, python and some microservices technologies at EXA MOBILITY.
+                as a website developer from frontend & backend side using React
+                JS, CSS, HTML, python and some microservices technologies at EXA
+                MOBILITY.
               </div>
               <br />
               <div className="onechild2">
@@ -799,12 +836,16 @@ const Resume = () => {
 
         <div className="subdivr-2">
           <div className="decr-2">
-            <strong>Project 03: </strong>In this project I took some questions
-            from python related to function, for loop, list, tuple etc. for
-            practice purpose.
+            <strong>Project 03: </strong> This portfolio project showcases a
+            comprehensive integration of various technologies that I've acquired
+            expertise in. It encompasses React for the dynamic front-end, HTML
+            and CSS for web structure and design, and Python for versatile
+            back-end capabilities. The project's aim was to demonstrate a wide
+            range of acquired skills and knowledge in a single, cohesive
+            showcase.
           </div>
           <a
-            href="https://github.com/snehalbhor/p05-python-exercise"
+            href="https://github.com/snehalbhor/p03-Snehal-Bhor-portfolio"
             className="btnnr-1"
           >
             GitHub Link
@@ -827,7 +868,64 @@ const Resume = () => {
 
         <div className="subdivr-2">
           <div className="decr-2">
-            <strong>Project 05: </strong>
+            <strong>Project 05: </strong>In this project I took some questions
+            from python related to function, for loop, list, tuple etc. for
+            practice purpose.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p05-python-exercise"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 06: </strong>This included React JS and HTML for the
+            user interface, and Python with Flask for the back-end.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 07: </strong>This included React JS, HTML, and
+            Python for building the application, and I used Docker to package it
+            and Kubernetes to manage it.
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 08: </strong>
+            In this project I have used mentioned technologies from which I
+            created all the sections which gives you thorough information about
+            my profile. And I used React JS, html, python, css, fastAPI, flask,
+            AI
+          </div>
+          <a
+            href="https://github.com/snehalbhor/p08-deployment-docker-kubernets-react-python-deep-learning"
+            className="btnnr-1"
+          >
+            GitHub Link
+          </a>
+        </div>
+
+        <div className="subdivr-2">
+          <div className="decr-2">
+            <strong>Project 09: </strong>
             In the development of this project, I used many of technologies,
             including React JS, JavaScript, HTML, CSS, Python, as well as
             containerization through Docker and orchestration with Kubernetes.
@@ -844,12 +942,13 @@ const Resume = () => {
 
         <div className="subdivr-2">
           <div className="decr-2">
-            <strong>Project 06: </strong>This included React JS, HTML, and
-            Python for building the application, and I used Docker to package it
-            and Kubernetes to manage it.
+            <strong>Project 10: </strong>
+            In this project I have ued mentioned techologies and deployed it
+            with docker. And I used React JS , javascript, html, css, python,
+            docker , MERN- MongoDB, Express, React, Node.
           </div>
           <a
-            href="https://github.com/snehalbhor/p07-deployment-docker-react-python-deep-learning"
+            href="https://github.com/snehalbhor/p10-MERN-stack-Docker-Environmental-Website"
             className="btnnr-1"
           >
             GitHub Link
@@ -858,29 +957,12 @@ const Resume = () => {
 
         <div className="subdivr-2">
           <div className="decr-2">
-            <strong>Project 07: </strong>This included React JS and HTML for the
-            user interface, and Python with Flask for the back-end.
+            <strong>Project 11: </strong>
+            In this exercise I have written all the commands which i know and
+            used in my projects.
           </div>
           <a
-            href="https://github.com/snehalbhor/p06-react-python-flask-deep-learning-ai"
-            className="btnnr-1"
-          >
-            GitHub Link
-          </a>
-        </div>
-
-        <div className="subdivr-2">
-          <div className="decr-2">
-            <strong>Project 08: </strong> This portfolio project showcases a
-            comprehensive integration of various technologies that I've acquired
-            expertise in. It encompasses React for the dynamic front-end, HTML
-            and CSS for web structure and design, and Python for versatile
-            back-end capabilities. The project's aim was to demonstrate a wide
-            range of acquired skills and knowledge in a single, cohesive
-            showcase.
-          </div>
-          <a
-            href="https://github.com/snehalbhor/p03-Snehal-Bhor-portfolio"
+            href="https://github.com/snehalbhor/p11-React.JS-python-docker-git-commands-exercise"
             className="btnnr-1"
           >
             GitHub Link
