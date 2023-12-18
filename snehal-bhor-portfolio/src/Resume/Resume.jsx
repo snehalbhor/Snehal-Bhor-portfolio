@@ -60,8 +60,8 @@ const Resume = () => {
         8.5,
         divWidth,
         divHeight,
-        "mailto:snehalsp65@gmail.com",
-        "snehalsp65@gmail.com",
+        "mailto:snehal.a.bhor@gmail.com",
+        "snehal.a.bhor@gmail.com",
         8,
         1
       );
@@ -262,8 +262,8 @@ const Resume = () => {
                   <GrMail size={30} className="design" />
                 </div>
                 <div className="text-container">
-                  mail : {"      "}
-                  <a href="mailto:snehalsp65@gmail.com">snehalsp65@gmail.com</a>
+                  mail : {" "}
+                  <a href="mailto:snehal.a.bhor@gmail.com">snehal.a.bhor@gmail.com</a>
                   <span> &lt;-- Click to mail</span>
                 </div>
               </div>
